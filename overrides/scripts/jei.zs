@@ -32,6 +32,11 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:2131>);
 //Hiding and removing some unecessary ingots
 
 mods.jei.JEI.removeAndHide(<libvulpes:productingot>);
-mods.jei.JEI.removeAndHide(<libvulpes:productrod>);
+mods.jei.JEI.removeAndHide(<libvulpes:productrod:4>);
+mods.jei.JEI.removeAndHide(<libvulpes:productrod:1>);
+mods.jei.JEI.removeAndHide(<libvulpes:productrod:6>);
+mods.jei.JEI.removeAndHide(<libvulpes:productrod:7>);
+mods.jei.JEI.removeAndHide(<libvulpes:productrod:10>);
+mods.jei.JEI.removeAndHide(<advancedrocketry:productrod:5>);
 mods.jei.JEI.removeAndHide(<libvulpes:productsheet>);
 mods.jei.JEI.removeAndHide(<libvulpes:productnugget>);

@@ -1534,7 +1534,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Magnetite Vein",
-          "desc:8": "While there are other veins which give you iron, one of the easiest ones to find will give you magnetite, an ore which can be smelted into iron. Look for the pieces on the surface to help you find a vein.\n\nAs a bonus, this vein also gives vanadium magnetite, an important ore for later on, and gold. Also gives a slight bit of normal iron ore."
+          "desc:8": "While there are other veins which give you iron, one of the easiest ones to find will give you magnetite, an ore which can be smelted into iron. Look for the pieces on the surface to help you find a vein.\n\nAs a bonus, this vein also gives vanadium magnetite, an important ore for later on, and gold. Also gives a slight bit of normal iron ore.\n\n§nIt is §b§nHIGHLY§b§n§n§r§n recommended you mark down any vein you come across with JourneyMap, the default key is \"J\""
         }
       },
       "tasks:9": {
@@ -1768,6 +1768,113 @@
       }
     },
     "26:10": {
+      "questID:3": 26,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:ore_copper_0",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Other Veins",
+          "desc:8": "This quest leads to other veins which may be required for steam."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "index:3": 0,
+          "taskID:8": "bq_standard:checkbox"
+        }
+      },
+      "rewards:9": {}
+    },
+    "27:10": {
+      "questID:3": 27,
+      "preRequisites:11": [
+        26
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:ore_chalcopyrite_0",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Get to the Copper!",
+          "desc:8": "Copper Ore is also quite important for numerous things.\n\nChalcopyrite Veins are probably your best bet, as they also give some iron."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:ore_chalcopyrite_0",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:ore_iron_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:ore_pyrite_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:ore_copper_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "28:10": {
       "questID:3": 28,
       "preRequisites:11": [
         22
@@ -1830,6 +1937,1088 @@
           }
         }
       }
+    },
+    "29:10": {
+      "questID:3": 29,
+      "preRequisites:11": [
+        26
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:ore_tin_0",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Tin Man",
+          "desc:8": "Tin is quite an important ore. Best find yourself a vein right now."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:ore_tin_0",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": "oreTin"
+            },
+            "1:10": {
+              "id:8": "gregtech:ore_cassiterite_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "oreCassiterite"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:glass",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "30:10": {
+      "questID:3": 30,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:ore_bornite_0",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Bornite Vein",
+          "desc:8": "Another source of copper, except this one is very deep and rare. But is almost exclusively copper, all the way through.\n\n§7§6Also note that there ARE NO surface indicators of this vein. May be very difficult to find!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:ore_bornite_0",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": "oreBornite"
+            },
+            "1:10": {
+              "id:8": "gregtech:ore_chalcocite_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "oreChalcocite"
+            },
+            "2:10": {
+              "id:8": "gregtech:ore_enargite_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "oreEnargite"
+            },
+            "3:10": {
+              "id:8": "gregtech:ore_copper_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "oreCopper"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "31:10": {
+      "questID:3": 31,
+      "preRequisites:11": [
+        27
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:ore_tetrahedrite_0",
+            "Count:3": 1,
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Tetrahedrite Vein",
+          "desc:8": "Tetrahedrite is another source of copper. This vein is almost excusively copper.\n\nIs also a good source of stibnite, a very important ore later on. However, this ore cannot be processed right now.\n\nAlso only spawns in mountains."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:ore_tetrahedrite_0",
+              "Count:3": 32,
+              "Damage:2": 0,
+              "OreDict:8": "oreTetrahedrite"
+            },
+            "1:10": {
+              "id:8": "gregtech:ore_copper_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": "oreCopper"
+            },
+            "2:10": {
+              "id:8": "gregtech:ore_stibnite_0",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": "oreStibnite"
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "32:10": {
+      "questID:3": 32,
+      "preRequisites:11": [
+        40,
+        41
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 10095,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Bronze",
+          "desc:8": "Bronze is a really important material for making steam machines.\n\nBronze for now can be made by crushing down copper and tin into their dust forms, then recombining them in a 3 copper to 1 tin ratio in a crafting grid. The result is bronze dust, which can then be smelted into bronze.\n\n§nThis is the only way to make bronze for a little while, and it is slightly innefficient. Try to change over to a different way later on!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 12,
+              "Damage:2": 10018,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 4,
+              "Damage:2": 10071,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 12,
+              "Damage:2": 2018,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 4,
+              "Damage:2": 2071,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 12,
+              "Damage:2": 2095,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 12,
+              "Damage:2": 10095,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 16,
+              "Damage:2": 10018,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "33:10": {
+      "questID:3": 33,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            },
+            "Damage:2": 6,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Hammer Time!",
+          "desc:8": "Gregtech has a whole host of tools that you\u0027ll need, like the hammer and wrench. Remember that all of these can be made with different materials, however, your best option right now is iron. (Bronze is weaker.)\n\nThe first one you\u0027ll need is the hammer for the creation of plates."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 1,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:iron_ingot",
+              "Count:3": 8,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "34:10": {
+      "questID:3": 34,
+      "preRequisites:11": [
+        33,
+        32
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 12095,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Le Bronze James",
+          "desc:8": "Bronze isn\u0027t good on its own, you\u0027ll need to make it into plates!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 32,
+              "Damage:2": 12095,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "35:10": {
+      "questID:3": 35,
+      "preRequisites:11": [
+        33
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 12033,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Iron Plates",
+          "desc:8": "Iron plates are necessary for numerous items, including other GT tools."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 32,
+              "Damage:2": 12033,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "gregtech:ore_tin_0",
+              "Count:3": 16,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "36:10": {
+      "questID:3": 36,
+      "preRequisites:11": [
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            },
+            "Damage:2": 8,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Wrench",
+          "desc:8": "The wrench is vital to many recipes! Again, its best to make this out of iron for now."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "harvestcraft:chickenparmasanitem",
+              "Count:3": 2,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
+    },
+    "37:10": {
+      "questID:3": 37,
+      "preRequisites:11": [
+        35
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            },
+            "Damage:2": 9,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "File",
+          "desc:8": "Make yourself a file. Gonna come in handy for rods!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 9,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "38:10": {
+      "questID:3": 38,
+      "preRequisites:11": [
+        37
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 14033,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Iron Rods",
+          "desc:8": "You\u0027re gonna need a few of these... for more GT tools!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 16,
+              "Damage:2": 14033,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "39:10": {
+      "questID:3": 39,
+      "preRequisites:11": [
+        37,
+        32
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 14095,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Bronze Rods",
+          "desc:8": "Bronze rods will be pretty good for some Gregtech machines and multiblocks later on."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 16,
+              "Damage:2": 14095,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "40:10": {
+      "questID:3": 40,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 10071,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Tin Ingots",
+          "desc:8": "Some tin will be necessary for bronze, some more tin for some other stuff."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 32,
+              "Damage:2": 10071,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "41:10": {
+      "questID:3": 41,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 10018,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Copper Ingots",
+          "desc:8": "Copper is a necessary material for bronze, as well as some other stuff."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 32,
+              "Damage:2": 10018,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "42:10": {
+      "questID:3": 42,
+      "preRequisites:11": [
+        37
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            },
+            "Damage:2": 5,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Saw (not the movie)",
+          "desc:8": "A saw is helpful for making wood more efficiently."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 5,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "43:10": {
+      "questID:3": 43,
+      "preRequisites:11": [
+        38
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            },
+            "Damage:2": 11,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Screwdriver",
+          "desc:8": "Who knew that a screw could drive? I don\u0027t know, but regardless, you\u0027ll need a screwdriver."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 11,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "44:10": {
+      "questID:3": 44,
+      "preRequisites:11": [
+        37
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            },
+            "Damage:2": 10,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Crowbar",
+          "desc:8": "A crowbar will remove covers from machines via a simple right click; not helpful to you for a little while but will be helpful so you won\u0027t have to break machines."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 10,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "45:10": {
+      "questID:3": 45,
+      "preRequisites:11": [
+        42
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gtadditions:ga_meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            },
+            "Damage:2": 0,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Small \u0026 Large Bending Cylinder",
+          "desc:8": "These will be helpful for the creation of some items, like buckets."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gtadditions:ga_meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gtadditions:ga_meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
     }
   },
   "questLines:9": {
@@ -2044,6 +3233,139 @@
           "y:3": -36,
           "id:3": 24,
           "sizeY:3": 72
+        },
+        "1:10": {
+          "sizeX:3": 24,
+          "x:3": -84,
+          "y:3": -84,
+          "id:3": 26,
+          "sizeY:3": 24
+        },
+        "2:10": {
+          "sizeX:3": 24,
+          "x:3": -132,
+          "y:3": -36,
+          "id:3": 27,
+          "sizeY:3": 24
+        },
+        "3:10": {
+          "sizeX:3": 24,
+          "x:3": -144,
+          "y:3": -72,
+          "id:3": 29,
+          "sizeY:3": 24
+        },
+        "4:10": {
+          "sizeX:3": 24,
+          "x:3": -108,
+          "y:3": 12,
+          "id:3": 30,
+          "sizeY:3": 24
+        },
+        "5:10": {
+          "sizeX:3": 24,
+          "x:3": -156,
+          "y:3": 12,
+          "id:3": 31,
+          "sizeY:3": 24
+        },
+        "6:10": {
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": -12,
+          "id:3": 32,
+          "sizeY:3": 24
+        },
+        "7:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 48,
+          "id:3": 33,
+          "sizeY:3": 24
+        },
+        "8:10": {
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": 24,
+          "id:3": 34,
+          "sizeY:3": 24
+        },
+        "9:10": {
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": 72,
+          "id:3": 35,
+          "sizeY:3": 24
+        },
+        "10:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 96,
+          "id:3": 36,
+          "sizeY:3": 24
+        },
+        "11:10": {
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": 120,
+          "id:3": 37,
+          "sizeY:3": 24
+        },
+        "12:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 144,
+          "id:3": 38,
+          "sizeY:3": 24
+        },
+        "13:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 48,
+          "id:3": 39,
+          "sizeY:3": 24
+        },
+        "14:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": -36,
+          "id:3": 40,
+          "sizeY:3": 24
+        },
+        "15:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": -12,
+          "id:3": 41,
+          "sizeY:3": 24
+        },
+        "16:10": {
+          "sizeX:3": 24,
+          "x:3": 180,
+          "y:3": 144,
+          "id:3": 42,
+          "sizeY:3": 24
+        },
+        "17:10": {
+          "sizeX:3": 24,
+          "x:3": 84,
+          "y:3": 204,
+          "id:3": 43,
+          "sizeY:3": 24
+        },
+        "18:10": {
+          "sizeX:3": 24,
+          "x:3": 132,
+          "y:3": 180,
+          "id:3": 44,
+          "sizeY:3": 24
+        },
+        "19:10": {
+          "sizeX:3": 24,
+          "x:3": 228,
+          "y:3": 156,
+          "id:3": 45,
+          "sizeY:3": 24
         }
       },
       "lineID:3": 1,
