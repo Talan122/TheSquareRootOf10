@@ -1,0 +1,26 @@
+{
+    "rules": [
+        {
+            "match": {
+                "blocks": {
+                    "blocks": [
+                        "minecraft:gravel:0"
+                    ]
+                }
+            },
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops":[
+                {
+                    "item": {
+                        "items": [
+                            "minecraft:gravel"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

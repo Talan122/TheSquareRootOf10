@@ -1,0 +1,28 @@
+{
+  "dims": [
+    {
+      "dimID": 0,
+      "dimName": "Overworld"
+    },
+    {
+      "dimID": 1,
+      "dimName": "End"
+    },
+    {
+      "dimID": -1,
+      "dimName": "Nether"
+    },
+    {
+      "dimID": -11325,
+      "dimName": "Deep Dark"
+    },
+    {
+      "dimID": 3,
+      "dimName": "Moon"
+    },
+    {
+      "dimID": -2,
+      "dimName": "Space"
+    }
+  ]
+}
