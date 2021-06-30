@@ -6,3 +6,5 @@ With many quests, as well as some difficult mobs and enemies, this pack certainl
 Current version: Alpha 0.0.1
 
 Haven't even made the questline up to Steam yet ._.
+
+Issues/Pull Requests are appretiated. For issues, please try and give good detail into the issue, thanks!
