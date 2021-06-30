@@ -7,4 +7,4 @@ Current version: Alpha 0.0.1
 
 Haven't even made the questline up to Steam yet ._.
 
-Issues/Pull Requests are appretiated. For issues, please try and give good detail into the issue, thanks!
+Issues/Pull Requests are appretiated. For issues, please try and give good detail into the issue, (or, alternatively for suggestions, give us details on how and why your suggestion should be added,) thanks!
