@@ -23,6 +23,10 @@
     {
       "dimID": -2,
       "dimName": "Space"
+    },
+    {
+      "dimID": 7,
+      "dimName": "Twilight Forest"
     }
   ]
 }

@@ -83,13 +83,3 @@ furnace.addRecipe(<minecraft:bread>, <contenttweaker:rawbread>);
 recipes.removeShapeless(<gregtech:meta_item_1:2345>, [<minecraft:wheat>, <gregtech:meta_tool:12>]);
 recipes.addShapeless("CTInefficient_Dough", <gregtech:meta_item_1:2345>, [<gregtech:meta_tool:12>, <minecraft:wheat>, <minecraft:wheat>, <minecraft:wheat>]);
 
-//Extra stuff to Pam's
-recipe.remove(<harvestcraft:bakewareitem>);
-recipe.remove(<harvestcraft:mixingbowlitem>);
-recipe.remove(<harvestcraft:juiceritem>);
-recipe.remove(<harvestcraft:potitem>);
-recipe.remove(<harvestcraft:cuttingboarditem>);
-recipe.remove(<harvestcraft:skilletitem>);
-recipe.remove(<harvestcraft:saucepanitem>);
-//Rest of Pam's will be saved until HV
-
