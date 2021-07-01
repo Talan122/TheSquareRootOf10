@@ -5,6 +5,6 @@ With many quests, as well as some difficult mobs and enemies, this pack certainl
 
 Current version: Alpha 0.0.2
 
-Questline is currently at the Steam boiler.
+Questline is currently at the Primitive Blast Furnace.
 
 Issues/Pull Requests are appretiated. For issues, please try and give good detail into the issue, (or, alternatively for suggestions, give us details on how and why your suggestion should be added,) thanks!
