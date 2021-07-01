@@ -1,20 +1,14 @@
 {
-  "weight": 70,
+  "weight": 100,
   "density": 0.3,
-  "dimension_filter": ["name:overworld", "name:Deep Dark", "name:Space"],
   "min_height": 50,
   "vein_populator": {
     "type": "surface_rock",
-    "material": "copper"
+    "material": "magnetite"
   },
-  "biome_modifier": {
-    "type": "biome_dictionary",
-    "mountain": 20
-  },
-
   "generator": {
     "type": "ellipsoid",
-    "radius": [17, 18]
+    "radius": [19, 22]
   },
   "filler": {
     "type": "simple",
@@ -23,15 +17,19 @@
       "values": [
         {
           "weight": 60,
-          "value": "ore:tetrahedrite"
+          "value": "ore:magnetite"
         },
         {
-          "weight": 20,
-          "value": "ore:copper"
+          "weight": 15,
+          "value": "ore:iron"
         },
-		    {
+		{
+          "weight": 15,
+          "value": "ore:vanadium_magnetite"
+        },
+		{
           "weight": 10,
-          "value": "ore:stibnite"
+          "value": "ore:precious_metal"
         }
       ]
     }

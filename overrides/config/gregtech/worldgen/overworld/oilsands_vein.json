@@ -1,15 +1,15 @@
 {
-  "weight": 70,
+  "weight": 40,
   "density": 0.6,
+  "max_height": 80,
   "min_height": 50,
-  "dimension_filter": ["name:overworld", "name:Deep Dark"],
   "vein_populator": {
     "type": "surface_rock",
-    "material": "coal"
+    "material": "oilsands"
   },
   "generator": {
     "type": "ellipsoid",
-    "radius": [16, 16]
+    "radius": [15, 15]
   },
   "filler": {
     "type": "simple",
@@ -17,12 +17,8 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 25,
-          "value": "ore:lignite"
-        },
-        {
-          "weight": 75,
-          "value": "ore:coal"
+          "weight": 100,
+          "value": "ore:oilsands"
         }
       ]
     }
