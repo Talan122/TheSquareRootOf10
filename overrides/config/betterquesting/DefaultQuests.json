@@ -2275,7 +2275,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2396,7 +2396,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2465,7 +2465,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2539,7 +2539,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2805,7 +2805,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2866,7 +2866,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2927,7 +2927,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -2988,7 +2988,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -5284,7 +5284,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Brick Dust",
-          "desc:8": "You\u0027re gonna need a lot of brick dust for the Primitive Blast Furnace, which is your first way to make steel here.\n\n(I\u0027m not even sure if this is enough...)"
+          "desc:8": "You\u0027re gonna need a lot of brick dust for the Primitive Blast Furnace, which is your first way to make steel here.\n\nThe next few hours (days? Weeks?) making this multiblock will probably be absolute hell. And yes, this is the exact amount of dust you need for §l1§r PBF\n\nAs if making the bricks weren\u0027t bad enough, you have to do this recipe in your macerator. Thankfully, its §osomewhat§r fast."
         }
       },
       "tasks:9": {
@@ -5298,7 +5298,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "gregtech:meta_item_1",
-              "Count:3": 64,
+              "Count:3": 408,
               "Damage:2": 2355,
               "OreDict:8": ""
             }
@@ -5335,7 +5335,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "New Quest",
-          "desc:8": "A lot of clay dust is also going to be required for the Primitive Blast Furnace (PBF)\n\n(I don\u0027t even know if this is enough...)"
+          "desc:8": "A lot of clay dust is also going to be required for the Primitive Blast Furnace (PBF)\n\nThis is the exact amount of clay needed for the PBF. Listen, I know its a lot, but it could be worse, §c§r§mcould be Arstotzka.§r\n\nIn the end, this whole process will take about 40-ish minutes of looking at a machine, assuming optimal conditions. You could either go back and make more of each machine, or just wait. Its up to you."
         }
       },
       "tasks:9": {
@@ -5349,7 +5349,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "gregtech:meta_item_1",
-              "Count:3": 64,
+              "Count:3": 408,
               "Damage:2": 2105,
               "OreDict:8": ""
             }
@@ -5387,7 +5387,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Fireclay Dust",
-          "desc:8": "Fireclay is one of the main things used in the PBF build to make the bricks as well as the controller. Unfortunately, you\u0027re gonna need to process it a little bit before you get to there.\n\n(Again, I have no idea if this is enough, you should try to make extra.)"
+          "desc:8": "Fireclay is one of the main things used in the PBF build to make the bricks as well as the controller. Unfortunately, you\u0027re gonna need to process it a little bit before you get to there."
         }
       },
       "tasks:9": {
@@ -5401,7 +5401,7 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "gregtech:meta_item_1",
-              "Count:3": 64,
+              "Count:3": 816,
               "Damage:2": 2356,
               "OreDict:8": ""
             }
@@ -5439,7 +5439,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Compressed Fireclay",
-          "desc:8": "Now you\u0027re getting somewhere with this! §oBut you\u0027re not even half way there... you should again try to make a lot of extra of these, even if you have extra at the end.§r"
+          "desc:8": "Now you\u0027re getting somewhere with this! §oThis is gonna take a long time... have fun :)"
         }
       },
       "tasks:9": {
@@ -5453,8 +5453,280 @@
           "requiredItems:9": {
             "0:10": {
               "id:8": "gregtech:meta_item_2",
-              "Count:3": 64,
+              "Count:3": 204,
               "Damage:2": 32014,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "91:10": {
+      "questID:3": 91,
+      "preRequisites:11": [
+        90
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_2",
+            "Count:3": 1,
+            "Damage:2": 32015,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Back to the furnace...",
+          "desc:8": "Throw that compressed fireclay into a furnace to get yourself some fireclay bricks. Now you\u0027re doing good! §oBut... this next part will take a little while...\n\n§6This amount is the correct amount you will need!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_2",
+              "Count:3": 204,
+              "Damage:2": 32015,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "92:10": {
+      "questID:3": 92,
+      "preRequisites:11": [
+        91
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:metal_casing",
+            "Count:3": 1,
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Fireclay Bricks",
+          "desc:8": "Yeah... uh... sorry?\n\nThis process will take 11 minutes... assuming optimal conditions like you don\u0027t run out of steam or turn off the game.\n\n§6You have to use the compressor recipe, the packager is unavailable until a later stage."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:metal_casing",
+              "Count:3": 34,
+              "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "93:10": {
+      "questID:3": 93,
+      "preRequisites:11": [
+        50
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:machine",
+            "Count:3": 1,
+            "Damage:2": 802,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Bronze Chest",
+          "desc:8": "Store even more with a bronze chest!\n\n§6Note that if you cannot make this right now you will be able to if you progress towards the steam part of this questline."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 802,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "94:10": {
+      "questID:3": 94,
+      "preRequisites:11": [
+        24
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "darmstadtium"
+              }
+            },
+            "Damage:2": 7,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Soft Mallet",
+          "desc:8": "The soft mallet will stop machines when you right click with it, as well as being used for some (not many) recipes. Currently, you can only make this out of wood."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "darmstadtium"
+                }
+              },
+              "Damage:2": 7,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "95:10": {
+      "questID:3": 95,
+      "preRequisites:11": [
+        83,
+        92
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:machine",
+            "Count:3": 1,
+            "Damage:2": 510,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Your Second Multiblock: The Primitive Blast Furnace",
+          "desc:8": "This will be your second multiblock, following the coke oven. Using coal coke, you can make steel in here!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 510,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:metal_casing",
+              "Count:3": 32,
+              "Damage:2": 1,
               "OreDict:8": ""
             }
           },
@@ -6117,6 +6389,41 @@
           "y:3": -192,
           "id:3": 90,
           "sizeY:3": 24
+        },
+        "63:10": {
+          "sizeX:3": 24,
+          "x:3": 432,
+          "y:3": -228,
+          "id:3": 91,
+          "sizeY:3": 24
+        },
+        "64:10": {
+          "sizeX:3": 24,
+          "x:3": 504,
+          "y:3": -216,
+          "id:3": 92,
+          "sizeY:3": 24
+        },
+        "65:10": {
+          "sizeX:3": 36,
+          "x:3": -84,
+          "y:3": 168,
+          "id:3": 93,
+          "sizeY:3": 36
+        },
+        "66:10": {
+          "sizeX:3": 24,
+          "x:3": -12,
+          "y:3": 48,
+          "id:3": 94,
+          "sizeY:3": 24
+        },
+        "67:10": {
+          "sizeX:3": 84,
+          "x:3": 564,
+          "y:3": -408,
+          "id:3": 95,
+          "sizeY:3": 84
         }
       },
       "lineID:3": 1,
