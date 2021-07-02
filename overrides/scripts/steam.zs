@@ -149,3 +149,6 @@ recipes.addShapeless(<gregtech:meta_item_1:2984>*4, [<gregtech:meta_item_1:2035>
 //Invar Dust Nerf
 recipes.removeByRecipeName("gregtech:dust_invar");
 recipes.addShapeless(<gregtech:meta_item_1:2126>*2, [<ore:dustIron>, <ore:dustIron>, <ore:dustNickel>]);
+
+//Diamond processing for macerator on Greg'drecipes.zs on line 196
+recipes.remove(<minecraft:coal_block>);

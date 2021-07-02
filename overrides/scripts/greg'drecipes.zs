@@ -12,6 +12,7 @@ val canner = mods.gregtech.recipe.RecipeMap.getByName("canner");
 val saw = mods.gregtech.recipe.RecipeMap.getByName("cutting_saw");
 val assembler = mods.gregtech.recipe.RecipeMap.getByName("assembler");
 val macerator = mods.gregtech.recipe.RecipeMap.getByName("macerator");
+val alloysmelter = mods.gregtech.recipe.RecipeMap.getByName("alloy_smelter");
 
 val assemblerRecipes as RecipeMap = RecipeMap.getByName("assembler");
 
@@ -191,4 +192,26 @@ PBFRecipeBuilder.start()
     .output(<ore:ingotSteel>.firstItem * 1)
     .duration(11250)
     .fuelAmount(18)
+    .buildAndRegister();
+
+//Diamond Process
+compressor.recipeBuilder()
+    .inputs(<ore:blockCoal>*16)
+    .outputs(<contenttweaker:compressedcoal>)
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+alloysmelter.recipeBuilder()
+    .inputs(<contenttweaker:compressedcoal>*4, <ore:blockIron>)
+    .outputs(<minecraft:diamond>*2)
+    .EUt(16)
+    .duration(600)
+    .buildAndRegister();
+
+//Joke dirt recipe in the assembler
+assembler.recipeBuilder()
+    .inputs(<extrautils2:compressedcobblestone:7>*64)
+    .outputs(<minecraft:dirt>)
+    .EUt(2000000000)
+    .duration(500000)
     .buildAndRegister();
