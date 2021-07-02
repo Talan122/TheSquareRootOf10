@@ -3594,7 +3594,7 @@
     "57:10": {
       "questID:3": 57,
       "preRequisites:11": [
-        55
+        65
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -4447,7 +4447,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Bronze Tank",
-          "desc:8": "There are several different tanks you can make, some you may even be able to make right now, but the main one you want is the bronze tank, it stores a decent amount of liquid and is going to be used here in a little bit ;)\n\n§0for some odd reason, i feel like that recipe should break the glass that it uses, so uhh..."
+          "desc:8": "There are several different tanks you can make, some you may even be able to make right now, but the main one you want is the bronze tank, it stores a decent amount of liquid and is going to be used here in a little bit ;)\n\n§rThe tank can also be used on your steam pipe to store steam, however, you have no way to pull out steam at this time from this tank. It also works as a multiblock, as stated in its tooltip."
         }
       },
       "tasks:9": {
@@ -5656,7 +5656,7 @@
           "partialMatch:1": 1,
           "autoConsume:1": 0,
           "groupDetect:1": 0,
-          "ignoreNBT:1": 0,
+          "ignoreNBT:1": 1,
           "index:3": 0,
           "consume:1": 0,
           "requiredItems:9": {
@@ -5703,7 +5703,7 @@
           "snd_update:8": "minecraft:entity.player.levelup",
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
-          "ismain:1": 0,
+          "ismain:1": 1,
           "name:8": "Your Second Multiblock: The Primitive Blast Furnace",
           "desc:8": "This will be your second multiblock, following the coke oven. Using coal coke, you can make steel in here!"
         }
@@ -5727,6 +5727,629 @@
               "id:8": "gregtech:metal_casing",
               "Count:3": 32,
               "Damage:2": 1,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "96:10": {
+      "questID:3": 96,
+      "preRequisites:11": [
+        95
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 10184,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Steel",
+          "desc:8": "\"foot\" - e5_snipz, while im in a VC with him\n\nAnyway steel is a very important material for machine hulls and many components of machines going fowards. And, well, you\u0027re gonna need a lot... like... a lot of steel. Start with 32 for now, but you will need a lot more in the future."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 32,
+              "Damage:2": 10184,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "97:10": {
+      "questID:3": 97,
+      "preRequisites:11": [
+        96
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_tool",
+            "Count:3": 1,
+            "tag:10": {
+              "GT.ToolStats:10": {
+                "Material:8": "steel"
+              }
+            },
+            "Damage:2": 1,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Steel Tools?",
+          "desc:8": "Steel tools, like a pickaxe or a shovel, are craftable now. However, it is advised to not make these for now as steel takes forever to make just one steel ingot, much less enough for the whole suite of tools. It is recommended you wait until you have the EBF to make these, but if you want, you can go ahead and make them now."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "steel"
+                }
+              },
+              "Damage:2": 1,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "steel"
+                }
+              },
+              "Damage:2": 2,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "steel"
+                }
+              },
+              "Damage:2": 3,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "steel"
+                }
+              },
+              "Damage:2": 5,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "steel"
+                }
+              },
+              "Damage:2": 9,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "steel"
+                }
+              },
+              "Damage:2": 6,
+              "OreDict:8": ""
+            },
+            "6:10": {
+              "id:8": "gregtech:meta_tool",
+              "Count:3": 1,
+              "tag:10": {
+                "GT.ToolStats:10": {
+                  "Material:8": "steel"
+                }
+              },
+              "Damage:2": 8,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "98:10": {
+      "questID:3": 98,
+      "preRequisites:11": [
+        96
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:machine_casing",
+            "Count:3": 1,
+            "Damage:2": 12,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Steel Hulls",
+          "desc:8": "Steel hulls are used in the making of high pressure machines. These are not required, but, they are significantly faster than their counterparts. It may be worth investing in a few for the long run."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:machine_casing",
+              "Count:3": 1,
+              "Damage:2": 12,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:machine_casing",
+              "Count:3": 1,
+              "Damage:2": 13,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "99:10": {
+      "questID:3": 99,
+      "preRequisites:11": [
+        73
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:machine",
+            "Count:3": 1,
+            "Damage:2": 4175,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Steam Hatch",
+          "desc:8": "The steam hatch is usefull in some multiblocks that use the steam. Because, yes, those exist."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4175,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "100:10": {
+      "questID:3": 100,
+      "preRequisites:11": [
+        99,
+        102
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:machine",
+            "Count:3": 1,
+            "Damage:2": 4178,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Steam Grinder",
+          "desc:8": "The steam grinder is a multiblock form of the steam macerator, able to do 8 items at a time. Will come in handy for that massive amount of clay/brick dust you need.\n\nBy the way, you\u0027ll use 6 of these bronze casings on the controller itself, the rest go towards the multiblock. The build instructions can be found by clicking on the multiblock controller in JEI and going over to the tab with multiblock instructions.\n\nAbout the multiblock though, steam is input via the steam hatch, as you may have guessed. Make sure you make THE STEAM busses, or else the multiblock will not form. As for placement of the hatches, for most GT multiblocks, it does not matter, you can place the steam hatch, the input hatch, or the output hatch anywhere you want in the multiblock.\n\nThis thing also uses an ENORMOUS amount of steam, so be prepared for that!\n\nYou can replace up to 11 of the bronze casings with steam, input, or output hatches. You can buffer more steam in this thing if you like, basically."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:metal_casing_bronze",
+              "Count:3": 28,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4178,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4175,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4176,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4177,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "101:10": {
+      "questID:3": 101,
+      "preRequisites:11": [
+        66
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 2984,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Potin",
+          "desc:8": "Potin is a very good pipe material able to be made now, with the lead you may have gathered, the tin you gathered, and bronze, you can make potin. It is also used in some crafting recipes too!"
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 2,
+              "Damage:2": 2035,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 2,
+              "Damage:2": 2095,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 1,
+              "Damage:2": 2071,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 4,
+              "Damage:2": 2984,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "102:10": {
+      "questID:3": 102,
+      "preRequisites:11": [
+        101
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:machine",
+            "Count:3": 1,
+            "Damage:2": 4177,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Steam Hatches",
+          "desc:8": "Steam hatches are important for steam multiblocks."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4176,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4177,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "103:10": {
+      "questID:3": 103,
+      "preRequisites:11": [
+        65
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:meta_item_1",
+            "Count:3": 1,
+            "Damage:2": 10126,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Invar",
+          "desc:8": "Invar is a neat little alloy for making gears and components for multiblocks."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 0,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:meta_item_1",
+              "Count:3": 32,
+              "Damage:2": 10126,
+              "OreDict:8": ""
+            }
+          },
+          "taskID:8": "bq_standard:retrieval"
+        }
+      },
+      "rewards:9": {}
+    },
+    "104:10": {
+      "questID:3": 104,
+      "preRequisites:11": [
+        103,
+        102,
+        99,
+        57
+      ],
+      "properties:10": {
+        "betterquesting:10": {
+          "issilent:1": 0,
+          "snd_complete:8": "minecraft:entity.player.levelup",
+          "lockedprogress:1": 0,
+          "tasklogic:8": "AND",
+          "repeattime:3": -1,
+          "visibility:8": "NORMAL",
+          "simultaneous:1": 0,
+          "icon:10": {
+            "id:8": "gregtech:machine",
+            "Count:3": 1,
+            "Damage:2": 4197,
+            "OreDict:8": ""
+          },
+          "globalshare:1": 0,
+          "questlogic:8": "AND",
+          "snd_update:8": "minecraft:entity.player.levelup",
+          "autoclaim:1": 0,
+          "repeat_relative:1": 1,
+          "ismain:1": 0,
+          "name:8": "Steam Oven",
+          "desc:8": "The steam oven acts like a regular furnace, except it does 8 at a time. It\u0027s an earlier version of the multismelter basically. And just like the steam grinder, it uses quite a lot of steam, so be prepared!\n\nAnd also like the steam grinder, hatches can be placed virtually anywhere you want. However, the steam hatch can only replace the bronze fireboxes at the bottom, and the input/output hatches can only replace the bronze casings.\n\nOnly 1 steam hatch is allowed, and you can have up to 4 input/output busses combined."
+        }
+      },
+      "tasks:9": {
+        "0:10": {
+          "partialMatch:1": 1,
+          "autoConsume:1": 0,
+          "groupDetect:1": 0,
+          "ignoreNBT:1": 0,
+          "index:3": 1,
+          "consume:1": 0,
+          "requiredItems:9": {
+            "0:10": {
+              "id:8": "gregtech:metal_casing_bronze",
+              "Count:3": 12,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "1:10": {
+              "id:8": "gregtech:boiler_firebox_casing",
+              "Count:3": 10,
+              "Damage:2": 0,
+              "OreDict:8": ""
+            },
+            "2:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4197,
+              "OreDict:8": ""
+            },
+            "3:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4177,
+              "OreDict:8": ""
+            },
+            "4:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4176,
+              "OreDict:8": ""
+            },
+            "5:10": {
+              "id:8": "gregtech:machine",
+              "Count:3": 1,
+              "Damage:2": 4175,
               "OreDict:8": ""
             }
           },
@@ -6167,11 +6790,11 @@
           "sizeY:3": 24
         },
         "31:10": {
-          "sizeX:3": 48,
-          "x:3": 432,
-          "y:3": 84,
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": -96,
           "id:3": 57,
-          "sizeY:3": 48
+          "sizeY:3": 24
         },
         "32:10": {
           "sizeX:3": 24,
@@ -6329,15 +6952,15 @@
         },
         "54:10": {
           "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": -288,
+          "x:3": 84,
+          "y:3": -324,
           "id:3": 82,
           "sizeY:3": 24
         },
         "55:10": {
           "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": -444,
+          "x:3": 288,
+          "y:3": -372,
           "id:3": 83,
           "sizeY:3": 24
         },
@@ -6364,15 +6987,15 @@
         },
         "59:10": {
           "sizeX:3": 24,
-          "x:3": 12,
-          "y:3": -180,
+          "x:3": 24,
+          "y:3": -156,
           "id:3": 87,
           "sizeY:3": 24
         },
         "60:10": {
           "sizeX:3": 24,
-          "x:3": 12,
-          "y:3": -144,
+          "x:3": 36,
+          "y:3": -120,
           "id:3": 88,
           "sizeY:3": 24
         },
@@ -6424,6 +7047,69 @@
           "y:3": -408,
           "id:3": 95,
           "sizeY:3": 84
+        },
+        "68:10": {
+          "sizeX:3": 60,
+          "x:3": 576,
+          "y:3": 0,
+          "id:3": 96,
+          "sizeY:3": 60
+        },
+        "69:10": {
+          "sizeX:3": 24,
+          "x:3": 648,
+          "y:3": -36,
+          "id:3": 97,
+          "sizeY:3": 24
+        },
+        "70:10": {
+          "sizeX:3": 36,
+          "x:3": 648,
+          "y:3": 72,
+          "id:3": 98,
+          "sizeY:3": 36
+        },
+        "71:10": {
+          "sizeX:3": 24,
+          "x:3": 24,
+          "y:3": -252,
+          "id:3": 99,
+          "sizeY:3": 24
+        },
+        "72:10": {
+          "sizeX:3": 36,
+          "x:3": -48,
+          "y:3": -288,
+          "id:3": 100,
+          "sizeY:3": 36
+        },
+        "73:10": {
+          "sizeX:3": 24,
+          "x:3": 12,
+          "y:3": -192,
+          "id:3": 101,
+          "sizeY:3": 24
+        },
+        "74:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -216,
+          "id:3": 102,
+          "sizeY:3": 24
+        },
+        "75:10": {
+          "sizeX:3": 24,
+          "x:3": -24,
+          "y:3": -84,
+          "id:3": 103,
+          "sizeY:3": 24
+        },
+        "76:10": {
+          "sizeX:3": 36,
+          "x:3": -108,
+          "y:3": -240,
+          "id:3": 104,
+          "sizeY:3": 36
         }
       },
       "lineID:3": 1,

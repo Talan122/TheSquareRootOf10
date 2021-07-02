@@ -130,5 +130,22 @@ recipes.addShaped(<gregtech:machine:802>, [
     [null, <gregtech:meta_item_1:13095>, null]
 ]);
 //Early Game Dense Bronze Plates are on line 157 of greg'drecipes.zs
-
 //PBF Recipes are in greg'drecipes starting at line 165
+
+
+
+//LV Circuit
+recipes.remove(basicCircuit);
+recipes.addShaped(basicCircuit, [
+    [resistor, <gregtech:meta_item_1:12184>, resistor],
+    [vacTube, basicBoard, vacTube],
+    [redAlloyCable, redAlloyCable, redAlloyCable]
+]);
+
+//Potin
+recipes.removeShapeless(<gregtech:meta_item_1:2984>*5, [<gregtech:meta_item_1:2035>, <gregtech:meta_item_1:2035>, <gregtech:meta_item_1:2095>, <gregtech:meta_item_1:2095>, <gregtech:meta_item_1:2071>]);
+recipes.addShapeless(<gregtech:meta_item_1:2984>*4, [<gregtech:meta_item_1:2035>, <gregtech:meta_item_1:2035>, <gregtech:meta_item_1:2095>, <gregtech:meta_item_1:2095>, <gregtech:meta_item_1:2071>]);
+
+//Invar Dust Nerf
+recipes.removeByRecipeName("gregtech:dust_invar");
+recipes.addShapeless(<gregtech:meta_item_1:2126>*2, [<ore:dustIron>, <ore:dustIron>, <ore:dustNickel>]);

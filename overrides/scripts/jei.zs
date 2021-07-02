@@ -54,3 +54,4 @@ mods.jei.JEI.removeAndHide(<libvulpes:productnugget>);
 
 //Removing Hot Iron
 mods.jei.JEI.removeAndHide(<gtadditions:ga_meta_item:32037>);
+furnace.remove(<gtadditions:ga_meta_item:32037>); //The one above isn't removing the recipe in furnaces, so I kinda have to add it here.
