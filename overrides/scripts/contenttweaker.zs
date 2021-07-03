@@ -19,3 +19,7 @@ var compressedCoal = VanillaFactory.createBlock("compressedcoal", <blockmaterial
 compressedCoal.setToolLevel(1);
 compressedCoal.setBlockHardness(7); //Slightly higher than a block of coal
 compressedCoal.register();
+
+//Industrial Diamond
+var industrialDiamond = VanillaFactory.createItem("fakediamond");
+industrialDiamond.register();

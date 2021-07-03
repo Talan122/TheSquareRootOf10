@@ -203,7 +203,7 @@ compressor.recipeBuilder()
     .buildAndRegister();
 alloysmelter.recipeBuilder()
     .inputs(<contenttweaker:compressedcoal>*4, <ore:blockIron>)
-    .outputs(<minecraft:diamond>*2)
+    .outputs(<contenttweaker:fakediamond>*2)
     .EUt(16)
     .duration(600)
     .buildAndRegister();

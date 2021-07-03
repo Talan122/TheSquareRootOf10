@@ -92,7 +92,7 @@ recipes.remove(<gregtech:machine:5>);
 recipes.addShaped(<gregtech:machine:5>, [
     [<gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>, <gregtech:meta_item_1:12095>],
     [<minecraft:glass_pane>, <gregtech:machine:812>, <minecraft:glass_pane>],
-    [<gregtech:meta_item_1:12095>, <gregtech:machine_casing:11>, <gregtech:meta_item_1:12095>]
+    [<gregtech:fluid_pipe:1095>, steamBrickedHull, <gregtech:fluid_pipe:1095>]
 ]);
 
 //Solar Boiler
@@ -100,7 +100,7 @@ recipes.remove(<gregtech:machine:3>);
 recipes.addShaped(<gregtech:machine:3>, [
     [<minecraft:glass_pane>, <minecraft:glass_pane>, <minecraft:glass_pane>],
     [<gregtech:meta_item_1:12062>, <gregtech:meta_item_1:12062>, <gregtech:meta_item_1:12062>],
-    [<gregtech:fluid_pipe:1095>, <gregtech:machine_casing:11>, <gregtech:fluid_pipe:1095>]
+    [<gregtech:fluid_pipe:1095>, steamBrickedHull, <gregtech:fluid_pipe:1095>]
 ]);
 
 //PBF
@@ -118,7 +118,7 @@ recipes.addShaped(<gregtech:machine:510>, [
 recipes.remove(<gregtech:machine:2232>);
 recipes.addShaped(<gregtech:machine:2232>, [
     [<gregtech:fluid_pipe:3095>, <gregtech:meta_item_1:32610>, <gregtech:fluid_pipe:3095>],
-    [<gregtech:meta_item_1:32610>, <gregtech:machine_casing:10>, <gregtech:meta_item_1:32610>],
+    [<gregtech:meta_item_1:32610>, steamHull, <gregtech:meta_item_1:32610>],
     [<gregtech:fluid_pipe:2095>, <gregtech:meta_item_1:32610>, <gregtech:fluid_pipe:2095>]
 ]);
 
@@ -152,3 +152,46 @@ recipes.addShapeless(<gregtech:meta_item_1:2126>*2, [<ore:dustIron>, <ore:dustIr
 
 //Diamond processing for macerator on Greg'drecipes.zs on line 196
 recipes.remove(<minecraft:coal_block>);
+
+//Alternate Macerator Recipe (so that it's possible)
+recipes.addShaped(<gregtech:machine:9>, [
+    [<contenttweaker:fakediamond>, <gregtech:fluid_pipe:1095>, <contenttweaker:fakediamond>],
+    [<gregtech:fluid_pipe:1095>, steamHull, <gregtech:fluid_pipe:1095>],
+    [<ore:craftingPiston>, <gregtech:fluid_pipe:1095>, <ore:craftingPiston>]
+]);
+
+//Regular/HP Boilers
+recipes.remove(<gregtech:machine:1>);
+recipes.remove(<gregtech:machine:2>);
+recipes.remove(<gregtech:machine:6>);
+recipes.addShaped(<gregtech:machine:1>, [
+    [<gregtech:meta_item_1:12095>, <gregtech:fluid_pipe:1095>, <gregtech:meta_item_1:12095>],
+    [<gregtech:fluid_pipe:1095>, <minecraft:furnace>, <gregtech:fluid_pipe:1095>],
+    [<gregtech:meta_item_1:12095>, steamBrickedHull, <gregtech:meta_item_1:12095>]
+]);
+recipes.addShaped(<gregtech:machine:2>, [
+    [<gregtech:meta_item_1:12184>, <gregtech:fluid_pipe:1184>, <gregtech:meta_item_1:12184>],
+    [<gregtech:fluid_pipe:1184>, <gregtech:machine:1>, <gregtech:fluid_pipe:1184>],
+    [<gregtech:meta_item_1:12184>, steamHPBrickedHull, <gregtech:meta_item_1:12184>]
+]);
+recipes.addShaped(<gregtech:machine:6>, [
+    [<gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>, <gregtech:meta_item_1:12184>],
+    [<minecraft:glass_pane>, <gregtech:machine:5>, <minecraft:glass_pane>],
+    [<gregtech:fluid_pipe:1184>, steamHPBrickedHull, <gregtech:fluid_pipe:1184>]
+]);
+
+//Wool
+recipes.remove(<minecraft:wool>);
+
+//Vacuum Tube
+recipes.remove(vacTube);
+recipes.addShaped(vacTube, [
+    [<minecraft:paper>, <gregtech:meta_item_1:14184>, <minecraft:paper>],
+    [<gregtech:cable:18>, <gregtech:meta_item_2:32454>, <gregtech:cable:18>],
+    [<gregtech:cable:18>, <gregtech:meta_item_1:14071>, <gregtech:cable:18>]
+]); //Copper Cable Recipe
+recipes.addShaped(vacTube, [
+    [<minecraft:paper>, <gregtech:meta_item_1:14184>, <minecraft:paper>],
+    [<gregtech:meta_item_2:16018>, <gregtech:meta_item_2:32454>, <gregtech:meta_item_2:16018>],
+    [<gregtech:meta_item_2:16018>, <gregtech:meta_item_1:14071>, <gregtech:meta_item_2:16018>]
+]); //Fine Copper Wire Recipe
