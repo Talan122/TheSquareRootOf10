@@ -27,4 +27,3 @@ global uevHull as IItemStack = <gregtech:machine:3240>;
 global uivHull as IItemStack = <gregtech:machine:3241>;
 global umvHull as IItemStack = <gregtech:machine:3242>;
 global uxvHull as IItemStack = <gregtech:machine:3243>;
-

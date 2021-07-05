@@ -38,6 +38,7 @@ recipes.addShaped(<buildcraftcore:gear_wood>,[
 <ore:circuitUiv>.removeTooltip("UIV Circuit");
 <ore:circuitUmv>.removeTooltip("UMV Circuit");
 <ore:circuitUxv>.removeTooltip("UXV Circuit");
+<ore:circuitMax>.removeTooltip("MAX Circuit");
 
 //Circuit Tooltips
 <ore:circuitPrimitive>.addTooltip(format.red("ULV Circuit"));
@@ -54,7 +55,11 @@ recipes.addShaped(<buildcraftcore:gear_wood>,[
 <ore:circuitUiv>.addTooltip(format.red("UIV Circuit"));
 <ore:circuitUmv>.addTooltip(format.red("UMV Circuit"));
 <ore:circuitUxv>.addTooltip(format.red("UXV Circuit"));
+<ore:circuitMax>.addTooltip(format.red("MAX Circuit"));
 
+// Funny tooltips cuz why not
+<gregtech:meta_item_2:32486>.addTooltip(format.blue("But can it run Doom?"));
+<gtadditions:ga_meta_item:32549>.addTooltip(format.blue("Can run Crisis"));
 
 //Low Alloy Recipes
 mixer.recipeBuilder()
