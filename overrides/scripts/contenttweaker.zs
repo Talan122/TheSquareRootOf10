@@ -23,3 +23,7 @@ compressedCoal.register();
 //Industrial Diamond
 var industrialDiamond = VanillaFactory.createItem("fakediamond");
 industrialDiamond.register();
+
+//Nickel Screw
+var nickelScrew = VanillaFactory.createItem("nickelscrew");
+nickelScrew.register();

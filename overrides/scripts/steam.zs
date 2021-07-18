@@ -1,4 +1,8 @@
 #priority -2
+
+import mods.immersiveengineering.BlastFurnace;
+import mods.immersiveengineering.CokeOven;
+
 val woodPlate = <gregtech:meta_item_1:12196>;
 val stonePlate = <gregtech:meta_item_1:12328>;
 
@@ -62,21 +66,11 @@ recipes.addShaped(<gregtech:machine:812>, [
 ]);
 
 //Coke Oven
-val cokeBrick = <gregtech:metal_casing:8>; //Why is it called metal casing when its not metal? :thinking:
-recipes.remove(cokeBrick);
-//Coke Oven Bricks on line 131 of greg'drecipes.zs
+recipes.remove(<gregtech:metal_casing:8>); //Casing
+//Coke Oven Bricks on line 131 of greg'drecipes.zs (We dont use the GT one, the IE one is better)
 recipes.remove(<gregtech:machine:526>); //Coke Oven Controller
-recipes.addShaped(<gregtech:machine:526>, [
-    [cokeBrick, wroughtIronPlate, cokeBrick],
-    [wroughtIronPlate, <ore:craftingToolWrench>, wroughtIronPlate],
-    [cokeBrick, <minecraft:furnace>, cokeBrick]
-]);
 recipes.remove(<gregtech:machine:527>); //Coke Oven Hatch
-recipes.addShaped(<gregtech:machine:527>, [
-    [<gregtech:meta_item_2:32016>, <gregtech:machine:812>, <gregtech:meta_item_2:32016>],
-    [<gregtech:machine:812>, <ore:craftingToolFile>, <gregtech:machine:812>],
-    [<gregtech:meta_item_2:32016>, <gregtech:machine:812>, <gregtech:meta_item_2:32016>]
-]);
+recipes.removeByRecipeName("immersiveengineering:stone_decoration/cokebrick");
 
 //Forge Hammer Parts
 recipes.remove(<minecraft:anvil>);
@@ -108,11 +102,7 @@ recipes.remove(<gregtech:metal_casing:1>);
 //Primitive Bricks (the block) is in greg'drecipes.zs on line 139
 //Way-to-difficult Compressed Fireclay is on line 147
 recipes.remove(<gregtech:machine:510>); //Controller Block
-recipes.addShaped(<gregtech:machine:510>, [
-    [<gregtech:metal_casing:1>, <gregtech:meta_item_1:8357>, <gregtech:metal_casing:1>],
-    [<ore:craftingToolScrewdriver>, <minecraft:furnace>, <ore:craftingToolHardHammer>],
-    [<gregtech:meta_item_1:17197>, <ore:craftingToolWrench>, <gregtech:meta_item_1:17197>]
-]);
+recipes.removeByRecipeName("immersiveengineering:stone_decoration/blastbrick");
 
 //Steam Pump
 recipes.remove(<gregtech:machine:2232>);
@@ -195,3 +185,16 @@ recipes.addShaped(vacTube, [
     [<gregtech:meta_item_2:16018>, <gregtech:meta_item_2:32454>, <gregtech:meta_item_2:16018>],
     [<gregtech:meta_item_2:16018>, <gregtech:meta_item_1:14071>, <gregtech:meta_item_2:16018>]
 ]); //Fine Copper Wire Recipe
+
+//Steel
+mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:metal:8>);
+mods.immersiveengineering.BlastFurnace.removeRecipe(<immersiveengineering:storage:8>);
+mods.immersiveengineering.BlastFurnace.addRecipe(steel, <ore:ingotIron>, 1000);
+mods.immersiveengineering.BlastFurnace.addRecipe(steel*9, <ore:blockIron>, 9000);
+
+//Coal Coke
+mods.immersiveengineering.CokeOven.removeRecipe(<immersiveengineering:material:6>);
+mods.immersiveengineering.CokeOven.removeRecipe(<immersiveengineering:stone_decoration:3>);
+mods.immersiveengineering.CokeOven.addRecipe(<gregtech:meta_item_1:8357>, 1, <minecraft:coal>, 900);
+mods.immersiveengineering.CokeOven.addRecipe(<gregtech:meta_block_compressed_22:5>, 1, <minecraft:coal_block>, 4500);
+

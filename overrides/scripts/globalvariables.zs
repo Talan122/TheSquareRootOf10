@@ -1,5 +1,6 @@
 #priority 5
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 
 //Globals for Tier 1 components, such as basic circuits or resistors
 global basicCircuit as IItemStack = <gregtech:meta_item_2:32487>;
@@ -27,3 +28,17 @@ global uevHull as IItemStack = <gregtech:machine:3240>;
 global uivHull as IItemStack = <gregtech:machine:3241>;
 global umvHull as IItemStack = <gregtech:machine:3242>;
 global uxvHull as IItemStack = <gregtech:machine:3243>;
+
+//Common Ingots
+global steel as IItemStack = <gregtech:meta_item_1:10184>;
+
+//Circuits
+global ULVCircuit as IOreDictEntry = <ore:circuitPrimitive>;
+global LVCircuit as IOreDictEntry = <ore:circuitBasic>;
+global MVCircuit as IOreDictEntry = <ore:circuitGood>;
+global HVCircuit as IOreDictEntry = <ore:circuitAdvanced>;
+global EVCircuit as IOreDictEntry = <ore:circuitExtreme>;
+global IVCircuit as IOreDictEntry = <ore:circuitElite>;
+global LuVCircuit as IOreDictEntry = <ore:circuitMaster>;
+global ZPMCircuit as IOreDictEntry = <ore:circuitUltimate>;
+global UVCircuit as IOreDictEntry = <ore:circuitSuperconductor>;

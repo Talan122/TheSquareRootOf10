@@ -25,6 +25,7 @@ recipes.addShaped(<buildcraftcore:gear_wood>,[
     ]);
 
 //Remove Gregicality's Tooltip
+<ore:circuitPrimitive>.removeTooltip("ULV Circuit");
 <ore:circuitBasic>.removeTooltip("LV Circuit");
 <ore:circuitGood>.removeTooltip("MV Circuit");
 <ore:circuitAdvanced>.removeTooltip("HV Circuit");
@@ -58,8 +59,8 @@ recipes.addShaped(<buildcraftcore:gear_wood>,[
 <ore:circuitMax>.addTooltip(format.red("MAX Circuit"));
 
 // Funny tooltips cuz why not
-<gregtech:meta_item_2:32486>.addTooltip(format.blue("But can it run Doom?"));
-<gtadditions:ga_meta_item:32549>.addTooltip(format.blue("Can run Crisis"));
+<gregtech:meta_item_2:32487>.addTooltip(format.green("But can it run Doom?"));
+<gtadditions:ga_meta_item:32549>.addTooltip(format.green("Can run Crisis"));
 
 //Low Alloy Recipes
 mixer.recipeBuilder()
@@ -139,7 +140,7 @@ assembler.recipeBuilder()
 //Coke Oven Bricks
 compressor.recipeBuilder()
     .inputs(<gregtech:meta_item_2:32016>*4)
-    .outputs(<gregtech:metal_casing:8>)
+    .outputs(<immersiveengineering:stone_decoration:0>)
     .EUt(8)
     .duration(200)
     .buildAndRegister();
@@ -147,7 +148,7 @@ compressor.recipeBuilder()
 //Primitive Bricks
 compressor.recipeBuilder()
     .inputs(<gregtech:meta_item_2:32015>*6)
-    .outputs(<gregtech:metal_casing:1>)
+    .outputs(<immersiveengineering:stone_decoration:1>)
     .EUt(8)
     .duration(400)
     .buildAndRegister();
@@ -176,25 +177,25 @@ for recipe in RecipeMaps.getPrimitiveBlastFurnaceRecipes() {
 }
 PBFRecipeBuilder.start()
     .input(<ore:ingotIron>)
-    .output(<ore:ingotSteel>.firstItem * 1)
+    .output(steel * 1)
     .duration(1500)
     .fuelAmount(2)
     .buildAndRegister();
 PBFRecipeBuilder.start()
     .input(<ore:ingotWroughtIron>)
-    .output(<ore:ingotSteel>.firstItem * 1)
+    .output(steel* 1)
     .duration(1250)
     .fuelAmount(2)
     .buildAndRegister();
 PBFRecipeBuilder.start()
     .input(<ore:blockIron>)
-    .output(<ore:ingotSteel>.firstItem * 1)
+    .output(steel* 1)
     .duration(13500)
     .fuelAmount(18)
     .buildAndRegister();
 PBFRecipeBuilder.start()
     .input(<ore:blockWroughtIron>)
-    .output(<ore:ingotSteel>.firstItem * 1)
+    .output(steel * 1)
     .duration(11250)
     .fuelAmount(18)
     .buildAndRegister();
@@ -219,4 +220,13 @@ assembler.recipeBuilder()
     .outputs(<minecraft:dirt>)
     .EUt(2000000000)
     .duration(500000)
+    .buildAndRegister();
+
+//Nickel Screw
+saw.recipeBuilder()
+    .inputs(<ore:plateNickel>)
+    .outputs(<contenttweaker:nickelscrew>*8)
+    .fluidInputs([<liquid:water>*8])
+    .EUt(4)
+    .duration(84)
     .buildAndRegister();
