@@ -15,7 +15,7 @@ assignees: ''
 
 **Multiplayer/Singleplayer**: Are you on singleplayer or multiplayer? Or are you on a server but just for you?
 
-==========ABOUT THE Bug
+==========ABOUT THE BUG==========
 
 **Description**: Please provide a detailed description of the bug, images are not needed but would be helpful.
 
@@ -28,3 +28,4 @@ assignees: ''
 
 **Crash Log** (if needed): Please put a link to the crash log here. Prefered if you used a website like https://pastebin.com
 to send it, but if you can't get it to work just paste it here. Also provide the latest.log, as that will also be helpful.
+
