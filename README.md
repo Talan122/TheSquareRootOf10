@@ -5,11 +5,11 @@ The pack right now is still in a very much early-alpha state. Updates are being 
 
 It is also a very light pack, requiring as little as 2GB of ram to run (Subject to change)
 
-_Curseforge Page_: https://www.curseforge.com/minecraft/modpacks/the-square-root-of-10
+__Curseforge Page__: https://www.curseforge.com/minecraft/modpacks/the-square-root-of-10
 
-_Discord_: (Not yet)
+__Discord__: (Not yet)
 
-_Github_: https://github.com/Talan122/TheSquareRootOf10 (you're already here anyway?)
+__Github__: https://github.com/Talan122/TheSquareRootOf10 (you're already here anyway?)
 
 Current version: Alpha 0.0.4
 
