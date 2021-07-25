@@ -13,14 +13,6 @@ furnace.remove(<gregtech:meta_item_1>, <gregtech:ore_stibnite_0>);
 recipes.removeShapeless(<gregtech:meta_item_1:2095>*4, [<ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustTin>]);
 recipes.addShapeless(<gregtech:meta_item_1:2095>*3, [<ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, <ore:dustTin>]);
 
-//Chests
-recipes.remove(<minecraft:chest>);
-recipes.addShaped(<minecraft:chest>, [
-    [<ore:logWood>, <ore:plankWood>, <ore:logWood>],
-    [<gregtech:meta_item_1:17033>, <gregtech:meta_item_1:18033>, <gregtech:meta_item_1:17033>],
-    [<ore:logWood>, <ore:plankWood>, <ore:logWood>]
-]);
-
 //Bricks
 recipes.remove(<minecraft:brick_block>);
 recipes.addShaped(<minecraft:brick_block>, [
@@ -51,7 +43,7 @@ recipes.remove(<gregtech:meta_item_1:10197>);
 var glass = <minecraft:glass>;
 recipes.remove(<minecraft:glass_pane>);
 recipes.addShaped(<minecraft:glass_pane>, [
-    [null, <ore:craftingToolSaw>, null],
+    [null, <gregtech:meta_tool:5>, null],
     [glass, glass, glass],
     [glass, glass, glass]
 ]);
@@ -61,7 +53,7 @@ recipes.remove(<gregtech:machine:811>); //Wooden tank which will probably end up
 recipes.remove(<gregtech:machine:812>);
 recipes.addShaped(<gregtech:machine:812>, [
     [<gtadditions:ga_meta_item:95>, <minecraft:glass_pane>, <gtadditions:ga_meta_item:95>],
-    [<minecraft:glass_pane>, <ore:craftingToolHardHammer>, <minecraft:glass_pane>],
+    [<minecraft:glass_pane>, hardHammer, <minecraft:glass_pane>],
     [<gtadditions:ga_meta_item:95>, <minecraft:glass_pane>, <gtadditions:ga_meta_item:95>]
 ]);
 
@@ -78,7 +70,7 @@ recipes.remove(<minecraft:iron_block>);
 recipes.addShaped(<minecraft:anvil>, [
     [<minecraft:iron_block>, <minecraft:iron_block>, <minecraft:iron_block>],
     [<gregtech:meta_item_1:16033>, <minecraft:iron_block>, <gregtech:meta_item_1:16033>],
-    [<minecraft:iron_block>, <ore:craftingToolHardHammer>, <minecraft:iron_block>]
+    [<minecraft:iron_block>, hardHammer, <minecraft:iron_block>]
 ]);
 
 //Lava Boiler
@@ -112,14 +104,6 @@ recipes.addShaped(<gregtech:machine:2232>, [
     [<gregtech:fluid_pipe:2095>, <gregtech:meta_item_1:32610>, <gregtech:fluid_pipe:2095>]
 ]);
 
-//Bronze Chest
-recipes.remove(<gregtech:machine:802>);
-recipes.addShaped(<gregtech:machine:802>, [
-    [<gregtech:meta_item_1:17095>, <gregtech:meta_item_1:13095>, <gregtech:meta_item_1:17095>],
-    [<ore:craftingToolHardHammer>, <minecraft:chest>, <ore:craftingToolScrewdriver>],
-    [null, <gregtech:meta_item_1:13095>, null]
-]);
-//Early Game Dense Bronze Plates are on line 157 of greg'drecipes.zs
 //PBF Recipes are in greg'drecipes starting at line 165
 
 

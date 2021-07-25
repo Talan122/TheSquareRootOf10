@@ -19,6 +19,7 @@ val hiddenCategories = [
     "zmaster587.AR.electrolyzer", 
     "zmaster587.AR.arcFurnace", 
     "zmaster587.AR.platePresser",
+    "zmaster587.AR.crystallizer",
     "ie.alloysmelter",
     "ie.metalPress",
     "ie.crusher",
@@ -40,7 +41,6 @@ for category in hiddenCategories {
 var toRemoveMachines = [
     360, 361, 362, 363, 2128, 2129, 2130, 2131, 3384, 3385, 3386, 3387, 3388, //Microwave
     2235, //Steam Mixer
-    4215, //Steam Chunk Miner
     510, //PBF
     526, //Coke Oven Controller
     527 //Coke Oven Hatch
@@ -167,7 +167,7 @@ for metas in toRemoveMetalDevice1 {
     mods.jei.JEI.removeAndHide(IEmetalDevice1.makeStack(metas));
 }
 
-var toRemoveWoodDevice0 = [2, 4, 6] as int[];
+var toRemoveWoodDevice0 = [4, 6] as int[];
 var IEWoodDevice0 = <immersiveengineering:wooden_device0>.definition;
 
 for metas in toRemoveWoodDevice0 {
@@ -181,4 +181,20 @@ var IEMetalDecor0 = <immersiveengineering:metal_decoration0>.definition;
 
 for metas in 2 to 8 {
     mods.jei.JEI.removeAndHide(IEMetalDecor0.makeStack(metas));
+}
+
+//Energy Converter Tooltips because most of them are hidden
+for metas in 2900 to 2971 {
+    var converter = GTMachine.makeStack(metas);
+    converter.addTooltip(format.aqua("Most energy converters are hidden."));
+    converter.addTooltip(format.aqua("To craft different amp ones:"));
+    converter.addTooltip(format.aqua("Replace the cable in the recipe with the amperage of your liking"));
+    converter.addShiftTooltip("If in creative, enable the JEI Hiding mode, and show the one you want.", "Shift for more info");
+}
+for metas in 4075 to 4098 {
+    var converter = GTMachine.makeStack(metas);
+    converter.addTooltip(format.aqua("Most energy converters are hidden."));
+    converter.addTooltip(format.aqua("To craft different amp ones:"));
+    converter.addTooltip(format.aqua("Replace the cable in the recipe with the amperage of your liking"));
+    converter.addShiftTooltip("If in creative, enable the JEI Hiding mode, and show the one you want.", "Shift for more info");
 }

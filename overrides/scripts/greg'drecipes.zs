@@ -13,6 +13,7 @@ val saw = mods.gregtech.recipe.RecipeMap.getByName("cutting_saw");
 val assembler = mods.gregtech.recipe.RecipeMap.getByName("assembler");
 val macerator = mods.gregtech.recipe.RecipeMap.getByName("macerator");
 val alloysmelter = mods.gregtech.recipe.RecipeMap.getByName("alloy_smelter");
+val fluid_extractor = mods.gregtech.recipe.RecipeMap.getByName("fluid_extractor");
 
 val assemblerRecipes as RecipeMap = RecipeMap.getByName("assembler");
 
@@ -20,7 +21,7 @@ val assemblerRecipes as RecipeMap = RecipeMap.getByName("assembler");
 recipes.remove(<buildcraftcore:gear_wood>);
 recipes.addShaped(<buildcraftcore:gear_wood>,[
     [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>],
-    [<ore:plankWood>, <ore:craftingToolScrewdriver>, <ore:plankWood>],
+    [<ore:plankWood>, <gregtech:meta_tool:9>, <ore:plankWood>],
     [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]
     ]);
 
@@ -80,7 +81,7 @@ ebf.recipeBuilder()
 
 //Ender Shard
 recipes.remove(<extrautils2:endershard>);
-recipes.addShapeless(<extrautils2:endershard> * 4, [<minecraft:ender_pearl>,<ore:craftingToolBlade>]);
+recipes.addShapeless(<extrautils2:endershard> * 4, [<minecraft:ender_pearl>,<gregtech:meta_tool:17>]);
 saw.recipeBuilder()
     .inputs(<minecraft:ender_pearl>)
     .fluidInputs([<liquid:water>*35])
@@ -124,18 +125,11 @@ macerator.recipeBuilder()
 
 //Crafting table on a stick
 recipes.remove(<actuallyadditions:item_crafter_on_a_stick>);
-recipes.addShaped(<actuallyadditions:item_crafter_on_a_stick>, [[<forge:bucketfilled>.withTag({FluidName: "glue", Amount: 1000}).onlyWithTag({FluidName: "glue", Amount: 1000}), <minecraft:crafting_table>, <forge:bucketfilled>.withTag({FluidName: "glue", Amount: 1000}).onlyWithTag({FluidName: "glue", Amount: 1000})],[<gregtech:meta_item_1:17001>, <minecraft:sign>, <gregtech:meta_item_1:17001>], [<ore:craftingToolFile>, <minecraft:stick>, <ore:craftingToolScrewdriver>]]);
-
-//Chest
-assembler.findRecipe(4, [<minecraft:planks:0>*8, <gregtech:meta_item_1:32766>.withTag({Configuration: 8})], null).remove();
-assembler.recipeBuilder()
-    .inputs(<ore:plankWood>*8, <gregtech:meta_item_1:17033>, <gregtech:meta_item_1:18033>)
-    .property("circuit", 8)
-    .fluidInputs(<fluid:glue>*36)
-    .outputs(<minecraft:chest>)
-    .EUt(16)
-    .duration(400)
-    .buildAndRegister();
+recipes.addShaped(<actuallyadditions:item_crafter_on_a_stick>, [
+    [<forge:bucketfilled>.withTag({FluidName: "glue", Amount: 1000}).onlyWithTag({FluidName: "glue", Amount: 1000}), <minecraft:crafting_table>, <forge:bucketfilled>.withTag({FluidName: "glue", Amount: 1000}).onlyWithTag({FluidName: "glue", Amount: 1000})],
+    [<gregtech:meta_item_1:17001>, <minecraft:sign>, <gregtech:meta_item_1:17001>],
+    [<gregtech:meta_tool:9>, <minecraft:stick>, <gregtech:meta_tool:11>]
+]);
 
 //Coke Oven Bricks
 compressor.recipeBuilder()
@@ -160,14 +154,6 @@ compressor.recipeBuilder()
     .inputs(<gregtech:meta_item_1:2356>*4)
     .outputs(<gregtech:meta_item_2:32014>)
     .EUt(2)
-    .duration(200)
-    .buildAndRegister();
-
-//Early Game Dense Bronze Plates
-compressor.recipeBuilder()
-    .inputs(<gregtech:meta_item_1:12095>*32)
-    .outputs(<gregtech:meta_item_1:13095>)
-    .EUt(8)
     .duration(200)
     .buildAndRegister();
 
@@ -229,4 +215,12 @@ saw.recipeBuilder()
     .fluidInputs([<liquid:water>*8])
     .EUt(4)
     .duration(84)
+    .buildAndRegister();
+
+//Liquid Ender
+fluid_extractor.recipeBuilder()
+    .inputs(<minecraft:ender_pearl>)
+    .fluidOutputs([<liquid:liquidender>*250])
+    .EUt(24)
+    .duration(300)
     .buildAndRegister();

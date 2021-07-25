@@ -6,6 +6,7 @@ import mods.gregtech.material.MaterialRegistry;
 
 val assembler = mods.gregtech.recipe.RecipeMap.getByName("assembler");
 val chembath = mods.gregtech.recipe.RecipeMap.getByName("chemical_bath");
+val saw = mods.gregtech.recipe.RecipeMap.getByName("cutting_saw");
 
 assembler.recipeBuilder()
     .inputs(<ore:wireFineCopper>*64, <ore:stickLongSteel>)
@@ -74,6 +75,65 @@ chembath.recipeBuilder()
     .fluidInputs([<liquid:creosote>*100])
     .outputs(<immersiveengineering:treated_wood>)
     .EUt(16)
-    .duration(10)
+    .duration(100)
     .buildAndRegister();
 
+saw.recipeBuilder()
+    .inputs(<ore:plankTreatedWood>)
+    .fluidInputs([<liquid:water>*4])
+    .outputs(<immersiveengineering:material:0>*4)
+    .EUt(4)
+    .duration(196)
+    .buildAndRegister();
+
+saw.recipeBuilder()
+    .inputs(<ore:plankTreatedWood>)
+    .fluidInputs([<liquid:distilled_water>*3])
+    .outputs(<immersiveengineering:material:0>*4)
+    .EUt(4)
+    .duration(126)
+    .buildAndRegister();
+
+saw.recipeBuilder()
+    .inputs(<ore:plankTreatedWood>)
+    .fluidInputs([<liquid:lubricant>*1])
+    .outputs(<immersiveengineering:material:0>*4)
+    .EUt(4)
+    .duration(50)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(ironPlate*5, <gregtech:meta_item_1:10018>)
+    .fluidInputs([<liquid:soldering_alloy>*18])
+    .property("circuit", 9)
+    .outputs(<immersiveengineering:material:8>)
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(ironPlate*5, <gregtech:meta_item_1:10087>)
+    .fluidInputs([<liquid:soldering_alloy>*18])
+    .property("circuit", 9)
+    .outputs(<immersiveengineering:material:8>*2)
+    .EUt(16)
+    .duration(200)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(steelPlate*5, <gregtech:meta_item_1:10087>)
+    .fluidInputs([<liquid:soldering_alloy>*18])
+    .property("circuit", 9)
+    .outputs(<immersiveengineering:material:9>)
+    .EUt(64)
+    .duration(200)
+    .buildAndRegister();
+
+assembler.recipeBuilder()
+    .inputs(steelPlate*5, <gregtech:meta_item_1:10087>)
+    .fluidInputs([<liquid:soldering_alloy>*18])
+    .property("circuit", 9)
+    .outputs(<immersiveengineering:material:9>*2)
+    .EUt(64)
+    .duration(200)
+    .buildAndRegister();

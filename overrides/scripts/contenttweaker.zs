@@ -4,6 +4,8 @@ import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Item;
 import mods.contenttweaker.ItemFood;
 import mods.contenttweaker.Block;
+import mods.contenttweaker.Fluid;
+import mods.contenttweaker.Color;
 
 //Stone Rod
 var stoneRod = VanillaFactory.createItem("stonerod");
@@ -27,3 +29,8 @@ industrialDiamond.register();
 //Nickel Screw
 var nickelScrew = VanillaFactory.createItem("nickelscrew");
 nickelScrew.register();
+
+//Liquid Ender
+var liquidEnder = VanillaFactory.createFluid("liquidender", Color.fromHex("05876b"));
+liquidEnder.viscosity = 4000;
+liquidEnder.register();

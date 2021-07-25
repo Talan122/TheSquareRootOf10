@@ -56,7 +56,7 @@ recipes.addShaped(<buildcraftcore:gear_stone>, [
 ]);
 recipes.addShaped(<buildcraftcore:gear_stone>, [
     [<contenttweaker:stonerod>, <minecraft:cobblestone>, <contenttweaker:stonerod>],
-    [<minecraft:cobblestone>, <ore:craftingToolFile>, <minecraft:cobblestone>],
+    [<minecraft:cobblestone>, <gregtech:meta_tool:9>, <minecraft:cobblestone>],
     [<contenttweaker:stonerod>, <minecraft:cobblestone>, <contenttweaker:stonerod>]
 ]);
 recipes.addShaped(<extrautils2:compressedcobblestone>, [[<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>], [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>], [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]]);
@@ -71,7 +71,7 @@ recipes.addShaped(<minecraft:crafting_table>, [
 ]);
 
 //Stone Dust
-recipes.addShapeless(<gregtech:meta_item_1:2328>, [<ore:craftingToolMortar>, <ore:stone>]);
+recipes.addShapeless(<gregtech:meta_item_1:2328>, [<gregtech:meta_tool:12>, <ore:stone>]);
 
 //Bread Process
 recipes.remove(<minecraft:bread>);

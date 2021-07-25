@@ -1,6 +1,12 @@
 material.low_alloy=Low Alloy
 material.titanium_aluminide=Titanium Aluminide
-material.constantan=Constantan
+material.steeleaf=Steeleaf
+material.ironwood=Ironwood
+material.liveroot=Liveroot
+material.ardite=Ardite
+material.manyullyn=Manyullyn
+material.blackiron=Black Iron
+
 
 item.contenttweaker.circuitchip.name=Circuit Chip
 item.contenttweaker.stonerod.name=Stone Rod
@@ -10,3 +16,5 @@ item.contenttweaker.nickelscrew.name=Nickel Screw
 item.contenttweaker.uraniumscrew.name=Uranium Screw
 
 tile.contenttweaker.compressedcoal.name=Heavily Compressed Coal
+
+fluid.liquidender=Liquid Ender
