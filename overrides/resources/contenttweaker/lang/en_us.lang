@@ -6,6 +6,7 @@ material.liveroot=Liveroot
 material.ardite=Ardite
 material.manyullyn=Manyullyn
 material.blackiron=Black Iron
+material.dark_steel=Dark Steel
 
 
 item.contenttweaker.circuitchip.name=Circuit Chip
@@ -14,7 +15,16 @@ item.contenttweaker.rawbread.name=Uncooked Bread
 item.contenttweaker.fakediamond.name=Industrial Diamond
 item.contenttweaker.nickelscrew.name=Nickel Screw
 item.contenttweaker.uraniumscrew.name=Uranium Screw
+item.contenttweaker.drillmold.name=Mold (Drill Head)
+
+item.contenttweaker.shreddedore.name=Shredded Ore (4x)
+item.contenttweaker.shardore.name=Ore Shard (8x)
+item.contenttweaker.pieceore.name=Ore Piece (16x)
+item.contenttweaker.infusedore.name=Infused Ore (32x)
+item.contenttweaker.ascendantore.name=Ascended Ore (64x)
 
 tile.contenttweaker.compressedcoal.name=Heavily Compressed Coal
 
 fluid.liquidender=Liquid Ender
+
+multiblocktweaker.machine.multireconstructor.name=Atomic Reconstructor Multiblock

@@ -50,3 +50,6 @@ darkSteel.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_LONG_ROD", "GENE
 //Extra flags (Some materials in recipes are missing flags that I'd like to have)
 <material:silver>.addFlags(["GENERATE_DOUBLE_PLATE", "GENERATE_DENSE"]);
 <material:nickel>.addFlags(["GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
+<material:obsidian>.addFlags(["GENERATE_PLATE"]);
+<material:copper>.addFlags(["GENERATE_DOUBLE_PLATE"]);
+<material:gold>.addFlags(["GENERATE_DOUBLE_PLATE"]);

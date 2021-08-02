@@ -2,6 +2,13 @@
 
 import mods.immersiveengineering.BlastFurnace;
 import mods.immersiveengineering.CokeOven;
+import mods.gregtech.recipe.RecipeMap;
+import crafttweaker.item.IItemDefinition;
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDictEntry;
+
+val assembler = mods.gregtech.recipe.RecipeMap.getByName("assembler");
 
 val woodPlate = <gregtech:meta_item_1:12196>;
 val stonePlate = <gregtech:meta_item_1:12328>;
@@ -182,3 +189,96 @@ mods.immersiveengineering.CokeOven.removeRecipe(<immersiveengineering:stone_deco
 mods.immersiveengineering.CokeOven.addRecipe(<gregtech:meta_item_1:8357>, 500, <minecraft:coal>, 900);
 mods.immersiveengineering.CokeOven.addRecipe(<gregtech:meta_block_compressed_22:5>, 4500, <minecraft:coal_block>, 8100);
 
+//Furnaces
+recipes.remove(<morefurnaces:furnaceblock:*>);
+recipes.remove(<morefurnaces:upgrade:*>);
+<morefurnaces:furnaceblock:*>.addTooltip(format.red("IMPORTANT! DO NOT BREAK WITH FUEL INSIDE! IT WILL VOID!"));
+mods.jei.JEI.removeAndHide(<morefurnaces:upgrade:2>);
+mods.jei.JEI.removeAndHide(<morefurnaces:upgrade:1>);
+mods.jei.JEI.removeAndHide(<morefurnaces:upgrade:3>);
+mods.jei.JEI.removeAndHide(<morefurnaces:upgrade:6>);
+mods.jei.JEI.removeAndHide(<morefurnaces:furnaceblock:4>);
+
+//Iron Furnace
+recipes.addShaped(<morefurnaces:furnaceblock:0>, [
+    [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
+    [<ore:plateIron>, <gregtech:meta_tool:6>, <ore:plateIron>],
+    [<ore:plateDoubleIron>, <minecraft:furnace>, <ore:plateDoubleIron>]
+]);
+assembler.recipeBuilder()
+        .inputs(<ore:plateIron>*7, <minecraft:furnace>)
+        .outputs(<morefurnaces:furnaceblock:0>)
+        .property("circuit", 20)
+        .EUt(64)
+        .duration(200)
+        .buildAndRegister();
+
+//Copper Furnace
+recipes.addShaped(<morefurnaces:furnaceblock:5>, [
+    [<ore:plateCopper>, <ore:plateCopper>, <ore:plateCopper>],
+    [<ore:plateCopper>, <gregtech:meta_tool:6>, <ore:plateCopper>],
+    [<ore:plateDoubleCopper>, <morefurnaces:furnaceblock:0>, <ore:plateDoubleCopper>]
+]);
+assembler.recipeBuilder()
+        .inputs(<ore:plateCopper>*7, <morefurnaces:furnaceblock:0>)
+        .outputs(<morefurnaces:furnaceblock:5>)
+        .property("circuit", 20)
+        .EUt(64)
+        .duration(300)
+        .buildAndRegister();
+
+//Silver Furnace
+recipes.addShaped(<morefurnaces:furnaceblock:6>, [
+    [<ore:plateSilver>, <ore:plateSilver>, <ore:plateSilver>],
+    [<ore:plateSilver>, <gregtech:meta_tool:6>, <ore:plateSilver>],
+    [<ore:plateDoubleSilver>, <morefurnaces:furnaceblock:5>, <ore:plateDoubleSilver>]
+]);
+assembler.recipeBuilder()
+        .inputs(<ore:plateSilver>*7, <morefurnaces:furnaceblock:5>)
+        .outputs(<morefurnaces:furnaceblock:6>)
+        .property("circuit", 20)
+        .EUt(64)
+        .duration(400)
+        .buildAndRegister();
+
+//Gold Furnace
+recipes.addShaped(<morefurnaces:furnaceblock:1>, [
+    [<ore:plateGold>, <ore:plateGold>, <ore:plateGold>],
+    [<ore:plateGold>, <gregtech:meta_tool:6>, <ore:plateGold>],
+    [<ore:plateDoubleGold>, <morefurnaces:furnaceblock:6>, <ore:plateDoubleGold>]
+]);
+assembler.recipeBuilder()
+        .inputs(<ore:plateGold>*7, <morefurnaces:furnaceblock:6>)
+        .outputs(<morefurnaces:furnaceblock:1>)
+        .property("circuit", 20)
+        .EUt(64)
+        .duration(600)
+        .buildAndRegister();
+
+//Diamond Furnace (technically isn't possible in Steam because the plates need a cutting saw, but whatever)
+recipes.addShaped(<morefurnaces:furnaceblock:2>, [
+    [<ore:plateDiamond>, <ore:plateDiamond>, <ore:plateDiamond>],
+    [<ore:plateDiamond>, <gregtech:meta_tool:6>, <ore:plateDiamond>],
+    [<ore:plateDiamond>, <morefurnaces:furnaceblock:1>, <ore:plateDiamond>]
+]);
+assembler.recipeBuilder()
+        .inputs(<ore:plateDiamond>*5, <morefurnaces:furnaceblock:1>)
+        .outputs(<morefurnaces:furnaceblock:2>)
+        .property("circuit", 20)
+        .EUt(64)
+        .duration(800)
+        .buildAndRegister();
+
+//Obsidian Furnace
+recipes.addShaped(<morefurnaces:furnaceblock:3>, [
+    [<ore:plateObsidian>, <ore:plateObsidian>, <ore:plateObsidian>],
+    [<morefurnaces:furnaceblock:2>, <gregtech:meta_tool:6>, <morefurnaces:furnaceblock:2>],
+    [<ore:plateObsidian>, <ore:plateObsidian>, <ore:plateObsidian>]
+]);
+assembler.recipeBuilder()
+        .inputs(<ore:plateObsidian>*4, <morefurnaces:furnaceblock:2>*2)
+        .outputs(<morefurnaces:furnaceblock:3>)
+        .property("circuit", 20)
+        .EUt(64)
+        .duration(1000)
+        .buildAndRegister();

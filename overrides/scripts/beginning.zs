@@ -48,15 +48,9 @@ recipes.addShaped(<minecraft:furnace>, [
 ]);
 
 //Stone Gear
-recipes.remove(<enderio:item_material:10>);
-recipes.addShaped(<enderio:item_material:10>, [
-    [<contenttweaker:stonerod>, <extrautils2:compressedcobblestone>, <contenttweaker:stonerod>],
-    [<extrautils2:compressedcobblestone>, null, <extrautils2:compressedcobblestone>],
-    [<contenttweaker:stonerod>, <extrautils2:compressedcobblestone>, <contenttweaker:stonerod>]
-]);
 recipes.addShaped(<enderio:item_material:10>, [
     [<contenttweaker:stonerod>, <minecraft:cobblestone>, <contenttweaker:stonerod>],
-    [<minecraft:cobblestone>, <gregtech:meta_tool:9>, <minecraft:cobblestone>],
+    [<minecraft:cobblestone>, null, <minecraft:cobblestone>],
     [<contenttweaker:stonerod>, <minecraft:cobblestone>, <contenttweaker:stonerod>]
 ]);
 recipes.addShaped(<extrautils2:compressedcobblestone>, [[<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>], [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>], [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]]);
