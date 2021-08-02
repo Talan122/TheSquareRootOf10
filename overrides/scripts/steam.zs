@@ -179,6 +179,6 @@ mods.immersiveengineering.BlastFurnace.addRecipe(steel*9, <ore:blockIron>, 9000)
 //Coal Coke
 mods.immersiveengineering.CokeOven.removeRecipe(<immersiveengineering:material:6>);
 mods.immersiveengineering.CokeOven.removeRecipe(<immersiveengineering:stone_decoration:3>);
-mods.immersiveengineering.CokeOven.addRecipe(<gregtech:meta_item_1:8357>, 1, <minecraft:coal>, 900);
-mods.immersiveengineering.CokeOven.addRecipe(<gregtech:meta_block_compressed_22:5>, 1, <minecraft:coal_block>, 4500);
+mods.immersiveengineering.CokeOven.addRecipe(<gregtech:meta_item_1:8357>, 500, <minecraft:coal>, 900);
+mods.immersiveengineering.CokeOven.addRecipe(<gregtech:meta_block_compressed_22:5>, 4500, <minecraft:coal_block>, 8100);
 

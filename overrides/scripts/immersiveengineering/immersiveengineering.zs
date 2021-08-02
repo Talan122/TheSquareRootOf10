@@ -3,7 +3,6 @@
 import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 
-var sheetmetals = <immersiveengineering:sheetmetal>.definition;
 var conveyor = <immersiveengineering:conveyor>;
 var basicConveyor = conveyor.withTag({conveyorType: "immersiveengineering:conveyor"});
 var noRedConveyor = conveyor.withTag({conveyorType: "immersiveengineering:uncontrolled"});
@@ -16,65 +15,63 @@ var steelChute = conveyor.withTag({conveyorType: "immersiveengineering:chute_ste
 var aluminumChute = conveyor.withTag({conveyorType: "immersiveengineering:chute_aluminum"});
 var copperChute = conveyor.withTag({conveyorType: "immersiveengineering:chute_copper"});
 
-//var exCrafting = mods.extendedcrafting.TableCrafting;
 
-for metas in 0 to 11 {
-    recipes.remove(sheetmetals.makeStack(metas));
-}
+
+recipes.remove(<immersiveengineering:sheetmetal:*>);
 
 var screwdriver = <gregtech:meta_tool:11>;
 
-recipes.addShaped(<immersiveengineering:sheetmetal:0>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:0>*2, [
     [<ore:screwCopper>, <ore:plateCopper>, <ore:screwCopper>],
     [<ore:plateCopper>, screwdriver, <ore:plateCopper>],
     [<ore:screwCopper>, <ore:plateCopper>, <ore:screwCopper>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:1>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:1>*2, [
     [<ore:screwAluminium>, <ore:plateAluminium>, <ore:screwAluminium>],
     [<ore:plateAluminium>, screwdriver, <ore:plateAluminium>],
     [<ore:screwAluminium>, <ore:plateAluminium>, <ore:screwAluminium>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:2>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:2>*2, [
     [<ore:screwLead>, <ore:plateLead>, <ore:screwLead>],
     [<ore:plateLead>, screwdriver, <ore:plateLead>],
     [<ore:screwLead>, <ore:plateLead>, <ore:screwLead>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:3>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:3>*2, [
     [<ore:screwSilver>, <ore:plateSilver>, <ore:screwSilver>],
     [<ore:plateSilver>, screwdriver, <ore:plateSilver>],
     [<ore:screwSilver>, <ore:plateSilver>, <ore:screwSilver>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:4>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:4>*2, [
     [<ore:screwNickel>, <ore:plateNickel>, <ore:screwNickel>],
     [<ore:plateNickel>, screwdriver, <ore:plateNickel>],
     [<ore:screwNickel>, <ore:plateNickel>, <ore:screwNickel>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:5>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:5>*2, [
     [<ore:screwUraniumRadioactive>, <ore:plateUraniumRadioactive>, <ore:screwUraniumRadioactive>],
     [<ore:plateUraniumRadioactive>, screwdriver, <ore:plateUraniumRadioactive>],
     [<ore:screwUraniumRadioactive>, <ore:plateUraniumRadioactive>, <ore:screwUraniumRadioactive>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:6>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:6>*2, [
     [<ore:screwCupronickel>, <ore:plateCupronickel>, <ore:screwCupronickel>],
     [<ore:plateCupronickel>, screwdriver, <ore:plateCupronickel>],
     [<ore:screwCupronickel>, <ore:plateCupronickel>, <ore:screwCupronickel>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:7>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:7>*2, [
     [<ore:screwElectrum>, <ore:plateElectrum>, <ore:screwElectrum>],
     [<ore:plateElectrum>, screwdriver, <ore:plateElectrum>],
     [<ore:screwElectrum>, <ore:plateElectrum>, <ore:screwElectrum>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:8>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:8>*2, [
     [<ore:screwSteel>, <ore:plateSteel>, <ore:screwSteel>],
     [<ore:plateSteel>, screwdriver, <ore:plateSteel>],
     [<ore:screwSteel>, <ore:plateSteel>, <ore:screwSteel>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:9>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:9>*2, [
     [<ore:screwIron>, <ore:plateIron>, <ore:screwIron>],
     [<ore:plateIron>, screwdriver, <ore:plateIron>],
     [<ore:screwIron>, <ore:plateIron>, <ore:screwIron>]
 ]);
-recipes.addShaped(<immersiveengineering:sheetmetal:10>, [
+recipes.addShaped(<immersiveengineering:sheetmetal:10>*2, [
     [<ore:screwGold>, <ore:plateGold>, <ore:screwGold>],
     [<ore:plateGold>, screwdriver, <ore:plateGold>],
     [<ore:screwGold>, <ore:plateGold>, <ore:screwGold>]
@@ -262,3 +259,35 @@ mods.extendedcrafting.TableCrafting.addShaped(2, <immersiveengineering:drill>, [
     [<immersiveengineering:material:13>, <ore:leather>, <ore:plateSteel>, <ore:blockSteel>, null],
     [null, <immersiveengineering:material:13>, null, null, null]
 ]);
+
+recipes.remove(<immersiveengineering:steel_armor_feet>);
+recipes.remove(<immersiveengineering:steel_armor_legs>);
+recipes.remove(<immersiveengineering:steel_armor_chest>);
+recipes.remove(<immersiveengineering:steel_armor_head>);
+
+recipes.addShaped(<immersiveengineering:steel_armor_feet>, [
+    [<ore:plateSteel>, null, <ore:plateSteel>],
+    [<ore:plateSteel>, <gregtech:meta_tool:6>, <ore:plateSteel>]
+]);
+
+recipes.addShaped(<immersiveengineering:steel_armor_legs>, [
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
+    [<ore:plateSteel>, <gregtech:meta_tool:6>, <ore:plateSteel>],
+    [<ore:plateSteel>, null, <ore:plateSteel>]
+]);
+
+recipes.addShaped(<immersiveengineering:steel_armor_chest>, [
+    [<ore:plateSteel>, <gregtech:meta_tool:6>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]
+]);
+
+recipes.addShaped(<immersiveengineering:steel_armor_head>, [
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
+    [<ore:plateSteel>, <gregtech:meta_tool:6>, <ore:plateSteel>]
+]);
+
+mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_legs>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_feet>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_chest>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_head>);

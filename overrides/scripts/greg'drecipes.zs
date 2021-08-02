@@ -1,8 +1,13 @@
 #priority -1
+
+import crafttweaker.recipes.ICraftingRecipe;
+import crafttweaker.oredict.IOreDictEntry;
 import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.recipe.PBFRecipeBuilder;
+
+import scripts.globalvariables.sawEzRecipe;
 
 val compressor = mods.gregtech.recipe.RecipeMap.getByName("compressor");
 val formingpress = mods.gregtech.recipe.RecipeMap.getByName("forming_press");
@@ -18,8 +23,8 @@ val fluid_extractor = mods.gregtech.recipe.RecipeMap.getByName("fluid_extractor"
 val assemblerRecipes as RecipeMap = RecipeMap.getByName("assembler");
 
 //Gears
-recipes.remove(<buildcraftcore:gear_wood>);
-recipes.addShaped(<buildcraftcore:gear_wood>,[
+recipes.remove(<enderio:item_material:9>);
+recipes.addShaped(<enderio:item_material:9>,[
     [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>],
     [<ore:plankWood>, <gregtech:meta_tool:9>, <ore:plankWood>],
     [<minecraft:stick>, <ore:plankWood>, <minecraft:stick>]
@@ -84,7 +89,7 @@ recipes.remove(<extrautils2:endershard>);
 recipes.addShapeless(<extrautils2:endershard> * 4, [<minecraft:ender_pearl>,<gregtech:meta_tool:17>]);
 saw.recipeBuilder()
     .inputs(<minecraft:ender_pearl>)
-    .fluidInputs([<liquid:water>*35])
+    .fluidInputs([<liquid:ender_distillation>*20])
     .outputs(<extrautils2:endershard>*8)
     .duration(500)
     .EUt(24)
@@ -100,7 +105,7 @@ compressor.recipeBuilder()
 assembler.recipeBuilder()
     .inputs(<minecraft:cobblestone>*4)
     .property("circuit", 4)
-    .outputs(<buildcraftcore:gear_stone>)
+    .outputs(<enderio:item_material:10>)
     .EUt(16)
     .duration(100)
     .buildAndRegister();
@@ -110,7 +115,7 @@ assembler.recipeBuilder()
     .inputs(<gregtech:meta_item_1:12196>*4)
     .property("circuit", 4)
     .fluidInputs(<fluid:glue>*72)
-    .outputs(<buildcraftcore:gear_wood>)
+    .outputs(<enderio:item_material:9>)
     .EUt(16)
     .duration(100)
     .buildAndRegister();
@@ -208,15 +213,6 @@ assembler.recipeBuilder()
     .duration(500000)
     .buildAndRegister();
 
-//Nickel Screw
-saw.recipeBuilder()
-    .inputs(<ore:plateNickel>)
-    .outputs(<contenttweaker:nickelscrew>*8)
-    .fluidInputs([<liquid:water>*8])
-    .EUt(4)
-    .duration(84)
-    .buildAndRegister();
-
 //Liquid Ender
 fluid_extractor.recipeBuilder()
     .inputs(<minecraft:ender_pearl>)
@@ -224,3 +220,39 @@ fluid_extractor.recipeBuilder()
     .EUt(24)
     .duration(300)
     .buildAndRegister();
+
+//Removing EZ Stick Recipes
+recipes.remove(<minecraft:stick>);
+recipes.addShaped(<minecraft:stick>*4, [
+    [<gregtech:meta_tool:5>],
+    [<ore:plankWood>],
+    [<ore:plankWood>]
+]);
+recipes.addShaped(<minecraft:stick>*2, [
+    [<ore:plankWood>],
+    [<ore:plankWood>]
+]);
+recipes.addShaped(<minecraft:stick>*4, [
+    [<gregtech:meta_tool:5>],
+    [<ore:stickLongWood>],
+]);
+
+var metaItem1 = <gregtech:meta_item_1>.definition;
+var metaItem2 = <gregtech:meta_item_2>.definition;
+val allOreEntries = oreDict.entries;
+
+for metas in 8000 to 8999 {
+    var ingotMeta = metas + 4000;
+    var ingot = metaItem1.makeStack(ingotMeta);
+    for oreDictEntry in allOreEntries {
+        if(oreDictEntry has metaItem2.makeStack(metas)) {
+            formingpress.recipeBuilder()
+                .inputs([ingot*4, <ore:plateSteel>*4])
+                .outputs(metaItem2.makeStack(metas))
+                .notConsumable(<contenttweaker:drillmold>)
+                .EUt(64)
+                .duration(4000)
+                .buildAndRegister();
+        }
+    }
+}

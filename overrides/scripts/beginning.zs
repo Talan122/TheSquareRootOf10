@@ -42,19 +42,19 @@ recipes.addShapeless(<minecraft:flint>, [<minecraft:gravel>,<minecraft:gravel>,<
 //Furnace
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped(<minecraft:furnace>, [
-    [<buildcraftcore:gear_stone>, <minecraft:cobblestone>, <buildcraftcore:gear_stone>],
+    [<enderio:item_material:10>, <minecraft:cobblestone>, <enderio:item_material:10>],
     [<minecraft:cobblestone>, <minecraft:flint>, <minecraft:cobblestone>],
-    [<buildcraftcore:gear_stone>, <minecraft:cobblestone>, <buildcraftcore:gear_stone>]
+    [<enderio:item_material:10>, <minecraft:cobblestone>, <enderio:item_material:10>]
 ]);
 
 //Stone Gear
-recipes.remove(<buildcraftcore:gear_stone>);
-recipes.addShaped(<buildcraftcore:gear_stone>, [
+recipes.remove(<enderio:item_material:10>);
+recipes.addShaped(<enderio:item_material:10>, [
     [<contenttweaker:stonerod>, <extrautils2:compressedcobblestone>, <contenttweaker:stonerod>],
     [<extrautils2:compressedcobblestone>, null, <extrautils2:compressedcobblestone>],
     [<contenttweaker:stonerod>, <extrautils2:compressedcobblestone>, <contenttweaker:stonerod>]
 ]);
-recipes.addShaped(<buildcraftcore:gear_stone>, [
+recipes.addShaped(<enderio:item_material:10>, [
     [<contenttweaker:stonerod>, <minecraft:cobblestone>, <contenttweaker:stonerod>],
     [<minecraft:cobblestone>, <gregtech:meta_tool:9>, <minecraft:cobblestone>],
     [<contenttweaker:stonerod>, <minecraft:cobblestone>, <contenttweaker:stonerod>]
@@ -65,9 +65,8 @@ recipes.addShaped(<contenttweaker:stonerod>*2, [[<minecraft:cobblestone>, null, 
 //Crafting Table
 recipes.remove(<minecraft:crafting_table>);
 recipes.addShaped(<minecraft:crafting_table>, [
-    [<minecraft:flint>, <minecraft:flint>, null],
-    [<ore:logWood>, <ore:logWood>, null],
-    [null, null, null]
+    [<minecraft:flint>, <minecraft:flint>],
+    [<ore:logWood>, <ore:logWood>]
 ]);
 
 //Stone Dust

@@ -2,6 +2,10 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.IIngredient;
+import mods.gregtech.recipe.RecipeMap;
+import mods.gregtech.recipe.RecipeMaps;
+
+
 
 //Globals for Tier 1 components, such as basic circuits or resistors
 global basicCircuit as IItemStack = <gregtech:meta_item_2:32487>;
@@ -50,3 +54,38 @@ global UVCircuit as IOreDictEntry = <ore:circuitSuperconductor>;
 //Tools
 global hardHammer as IIngredient = <gregtech:meta_tool:6>;
 global softMallet as IIngredient = <gregtech:meta_tool:7>;
+
+//Functions
+function sawEzRecipe(input as IItemStack, output as IItemStack, fluidAmount as float, EUt as short, duration as float) {
+    val saw = mods.gregtech.recipe.RecipeMap.getByName("cutting_saw");
+
+    var waterAmount  = fluidAmount;
+    var distilledAmount  = fluidAmount/1.3;
+    var lubricantAmount  = fluidAmount/4;
+
+    var normalTime  = duration;
+    var fastTime  = duration/1.5;
+    var fastestTime  = duration/4;
+
+    saw.recipeBuilder()
+        .inputs(input)
+        .outputs(output)
+        .fluidInputs([<liquid:water>*waterAmount as int])
+        .EUt(EUt)
+        .duration(normalTime)
+        .buildAndRegister();
+    saw.recipeBuilder()
+        .inputs(input)
+        .outputs(output)
+        .fluidInputs([<liquid:distilled_water>*distilledAmount as int])
+        .EUt(EUt)
+        .duration(fastTime)
+        .buildAndRegister();
+    saw.recipeBuilder()
+        .inputs(input)
+        .outputs(output)
+        .fluidInputs([<liquid:lubricant>*lubricantAmount as int])
+        .EUt(EUt)
+        .duration(fastestTime)
+        .buildAndRegister();
+}

@@ -23,7 +23,7 @@ val removedChests = [
 ] as IItemStack[];
 
 for items in removedChests {
-    mods.jei.JEI.removeAndHide(items);
+    recipes.remove(items);
 }
 
 //Chests
@@ -77,9 +77,9 @@ recipes.addShaped(<gregtech:machine:803>, [
 //Silver Chest
 recipes.remove(<ironchest:iron_chest:4>);
 recipes.addShaped(<ironchest:iron_chest:4>, [
-    [<ore:screwSilver>, <ore:plateSilver>*2, <ore:screwSilver>],
+    [<ore:screwSilver>, <ore:plateDoubleSilver>*2, <ore:screwSilver>],
     [<gregtech:meta_tool:6>, <gregtech:machine:803>, <gregtech:meta_tool:11>],
-    [null, <ore:plateSilver>*2]
+    [null, <ore:plateDoubleSilver>*2]
 ]);
 
 //Everything hereafter will be locked behind MV Bending (as well as their respective tiers), and will only be possible through an assembler.
@@ -123,3 +123,8 @@ assembler.recipeBuilder()
     .EUt(24)
     .duration(400)
     .buildAndRegister();
+
+
+//Ender Storage
+recipes.replaceAllOccurences(<ore:chestWood>, <gregtech:machine:1011>, <enderstorage:ender_storage:0>);
+recipes.replaceAllOccurences(<minecraft:cauldron>, <gregtech:machine:1021>, <enderstorage:ender_storage:1>);

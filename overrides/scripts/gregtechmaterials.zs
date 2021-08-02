@@ -41,3 +41,12 @@ manyullyn.addFlags(["GENERATE_PLATE", "GENERATE_GEAR", "GENERATE_ROD", "NO_SMELT
 //Black Iron
 var blackIron = MaterialRegistry.createIngotMaterial(607, "blackiron", 0x121212, "shiny", 1, [<material:iron>*1, <material:carbon>*1]);
 blackIron.addFlags(["GENERATE_PLATE", "GENERATE_GEAR", "GENERATE_ROD"]);
+
+//Dark Steel
+var darkSteel = MaterialRegistry.createIngotMaterial(608, "dark_steel", 0x2e2e2e, "dull", 1);
+darkSteel.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_LONG_ROD", "GENERATE_DENSE", "GENERATE_DOUBLE_PLATE"]);
+
+
+//Extra flags (Some materials in recipes are missing flags that I'd like to have)
+<material:silver>.addFlags(["GENERATE_DOUBLE_PLATE", "GENERATE_DENSE"]);
+<material:nickel>.addFlags(["GENERATE_ROD", "GENERATE_BOLT_SCREW"]);

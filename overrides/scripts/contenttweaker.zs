@@ -26,11 +26,11 @@ compressedCoal.register();
 var industrialDiamond = VanillaFactory.createItem("fakediamond");
 industrialDiamond.register();
 
-//Nickel Screw
-var nickelScrew = VanillaFactory.createItem("nickelscrew");
-nickelScrew.register();
-
 //Liquid Ender
 var liquidEnder = VanillaFactory.createFluid("liquidender", Color.fromHex("05876b"));
 liquidEnder.viscosity = 4000;
 liquidEnder.register();
+
+//Drill Mold
+var drillMold = VanillaFactory.createItem("drillmold");
+drillMold.register();

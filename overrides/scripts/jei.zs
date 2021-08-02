@@ -30,7 +30,16 @@ val hiddenCategories = [
     "ie.arcFurnace",
     "ie.arcFurnace.recycling",
     "ie.bottlingMachine",
-    "ie.mixer"
+    "ie.mixer",
+    "ZombieGenerator",
+    "EnderGenerator",
+    "LavaGenerator",
+    "StirlingGenerator",
+    "SolarPanel",
+    "CombustionGenerator",
+    "EIOTank",
+    "extendedcrafting:ender_crafting",
+    
     ] as string[];
 
 for category in hiddenCategories {
