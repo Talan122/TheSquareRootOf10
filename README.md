@@ -13,7 +13,7 @@ It is also a very light pack, requiring as little as 2GB of ram to run (Subject 
 
 [__Github__](https://github.com/Talan122/TheSquareRootOf10) (you're already here anyway?)
 
-Current version: `Alpha 0.0.4`
+Current version: `Alpha 0.0.6`
 
 Questline is currently at the LV Steam Turbine.
 
