@@ -124,9 +124,26 @@
           "index:3": 0,
           "rewards:9": {
             "0:10": {
-              "id:8": "minecraft:air",
-              "Count:3": 0,
-              "Damage:2": 0,
+              "id:8": "minecraft:skull",
+              "Count:3": 1,
+              "tag:10": {
+                "SkullOwner:10": {
+                  "Id:8": "196df854-5ce2-47df-92f5-2cea7c38958d",
+                  "Properties:10": {
+                    "textures:9": {
+                      "0:10": {
+                        "Signature:8": "D1NGi6HVGaQKYm7VztRn7Uereq7FocnpP0thhwY9vz9M2rrR2Jz52xfEk23vb/99DNhD4P/m06oDNwDfNMuZU+uOvds7bUsRRwdSOJfXR52TOg+DDfGZvzRXkwbULI+TnPT26Qx3LbCSwclnm+flKNE9bLaTTekj+6YX941rOpI+AuI2jI37rd5P8Nfer+73c0/UkzAKlpJe0zSPBLP9zP+cfGGexg0bggBlD/6hOdprUikxA+rJIJjgGxubmYQvFl52n//EJt0VWaFg3opBSvtAqzKhzp8SLN4AeVXb23T2kVwehXj6mgIR9BOaJerzmGe/g0ptJuyZmfLjIipuTVlDeT/w4SF8NetHkkn1k7h7EKTECL3nA72vKsT7+5+gEKlcJl0OIriW1uxoWtsQqDo22yToV7jkR5pFRYZQFfyFmrnk6g30kd1/rKouNdMogk6OBfrfbNttj8eYpNCKZHfIrjjhdp5s0eXqQ/yaEGvgQzNuo/AjHK7fFJSpIXMXeRo9msTS0S1uQjT9SF22SYemnOAWGKhyRnI2kKMa6Lsbj2RulOO05w9JX0vgk7VPDDKGY6ejjK637VxAZtNCQ+8NbWx/qK3Cyg8WU9n3cS/YUaDhl1SSZ+j6s1d07vvPE21bTU4zCA+JAevaKD02shSKCeYOjBcDcsSiuCA9abs\u003d",
+                        "Value:8": "ewogICJ0aW1lc3RhbXAiIDogMTYyNzk2MDc0ODU4MCwKICAicHJvZmlsZUlkIiA6ICIxOTZkZjg1NDVjZTI0N2RmOTJmNTJjZWE3YzM4OTU4ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJCdWNreWJ1YmJhIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2FjNGJmNTlmY2NjMDI5ZTZlN2E4OWNiNjY0ZGRiNjAzOGZlZmM5NzJhNGZhMTQ3MTY2ZGVkOThhM2Q1NGZhY2QiCiAgICB9CiAgfQp9"
+                      }
+                    }
+                  },
+                  "Name:8": "Buckybubba"
+                },
+                "display:10": {
+                  "Name:8": "Irrelevant Person"
+                }
+              },
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           }
@@ -401,7 +418,7 @@
           "groupDetect:1": 0,
           "ignoreNBT:1": 0,
           "index:3": 0,
-          "consume:1": 1,
+          "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
               "id:8": "minecraft:oak_stairs",
@@ -3080,8 +3097,7 @@
     "47:10": {
       "questID:3": 47,
       "preRequisites:11": [
-        38,
-        37
+        33
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3090,12 +3106,12 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
+          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:meta_item_1",
+            "id:8": "ironchest:iron_chest",
             "Count:3": 1,
-            "Damage:2": 18033,
+            "Damage:2": 3,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -3104,8 +3120,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Iron Ring",
-          "desc:8": "Iron rings are gonna be helpful for chests."
+          "name:8": "Copper Chest",
+          "desc:8": "You\u0027re able to store a lot more with a copper chest. Why not?"
         }
       },
       "tasks:9": {
@@ -3118,9 +3134,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:meta_item_1",
-              "Count:3": 8,
-              "Damage:2": 18033,
+              "id:8": "ironchest:iron_chest",
+              "Count:3": 1,
+              "Damage:2": 3,
               "OreDict:8": ""
             }
           },
@@ -3132,8 +3148,7 @@
     "48:10": {
       "questID:3": 48,
       "preRequisites:11": [
-        38,
-        42
+        50
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3142,12 +3157,12 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
+          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:meta_item_1",
-            "Count:3": 16,
-            "Damage:2": 16033,
+            "id:8": "ironchest:iron_chest",
+            "Count:3": 1,
+            "Damage:2": 7,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -3156,8 +3171,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Usain Bolt",
-          "desc:8": "Bolts can be turned to screws, just one of the many items you\u0027ll need."
+          "name:8": "...but why?",
+          "desc:8": "The DirtChest 9000 is the best form of storage ever, being able to hold a whole 1 stack of dirt! We here at Questbook Inc. 100% guarantee satisfaction after making this product.\n\n§8Note: There are no refunds"
         }
       },
       "tasks:9": {
@@ -3170,21 +3185,39 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:meta_item_1",
-              "Count:3": 16,
-              "Damage:2": 16033,
+              "id:8": "ironchest:iron_chest",
+              "Count:3": 1,
+              "Damage:2": 7,
               "OreDict:8": ""
             }
           },
           "taskID:8": "bq_standard:retrieval"
         }
       },
-      "rewards:9": {}
+      "rewards:9": {
+        "0:10": {
+          "rewardID:8": "bq_standard:item",
+          "index:3": 0,
+          "rewards:9": {
+            "0:10": {
+              "id:8": "minecraft:dirt",
+              "Count:3": 64,
+              "tag:10": {
+                "display:10": {
+                  "Name:8": "Infinity Ingot"
+                }
+              },
+              "Damage:2": 0,
+              "OreDict:8": ""
+            }
+          }
+        }
+      }
     },
     "49:10": {
       "questID:3": 49,
       "preRequisites:11": [
-        48
+        93
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3193,12 +3226,12 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
+          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "gregtech:meta_item_1",
+            "id:8": "ironchest:iron_chest",
             "Count:3": 1,
-            "Damage:2": 17033,
+            "Damage:2": 0,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -3207,8 +3240,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "Screws",
-          "desc:8": "Screws are used in numerous different recipes."
+          "name:8": "Iron Chest",
+          "desc:8": "An iron chest technically isn\u0027t any better than the bronze chest, however, it is helpful for those who like to scroll their items out. Also, if you want a bigger chest, you\u0027re gonna need this."
         }
       },
       "tasks:9": {
@@ -3221,9 +3254,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "gregtech:meta_item_1",
-              "Count:3": 8,
-              "Damage:2": 17033,
+              "id:8": "ironchest:iron_chest",
+              "Count:3": 1,
+              "Damage:2": 0,
               "OreDict:8": ""
             }
           },
@@ -3235,8 +3268,7 @@
     "50:10": {
       "questID:3": 50,
       "preRequisites:11": [
-        49,
-        47
+        0
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3287,7 +3319,7 @@
     "51:10": {
       "questID:3": 51,
       "preRequisites:11": [
-        50
+        49
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -3296,12 +3328,12 @@
           "lockedprogress:1": 0,
           "tasklogic:8": "AND",
           "repeattime:3": -1,
-          "visibility:8": "ALWAYS",
+          "visibility:8": "NORMAL",
           "simultaneous:1": 0,
           "icon:10": {
-            "id:8": "extrautils2:largishchest",
+            "id:8": "gregtech:machine",
             "Count:3": 1,
-            "Damage:2": 0,
+            "Damage:2": 803,
             "OreDict:8": ""
           },
           "globalshare:1": 0,
@@ -3310,8 +3342,8 @@
           "autoclaim:1": 0,
           "repeat_relative:1": 1,
           "ismain:1": 0,
-          "name:8": "This... thing?",
-          "desc:8": "Whatever this is, you can go ahead and craft it if you like."
+          "name:8": "Steel Chest",
+          "desc:8": "A larger chest, but it doesn\u0027t support scrolling out for those that like it."
         }
       },
       "tasks:9": {
@@ -3324,9 +3356,9 @@
           "consume:1": 0,
           "requiredItems:9": {
             "0:10": {
-              "id:8": "extrautils2:largishchest",
+              "id:8": "gregtech:machine",
               "Count:3": 1,
-              "Damage:2": 0,
+              "Damage:2": 803,
               "OreDict:8": ""
             }
           },
@@ -3594,7 +3626,7 @@
     "57:10": {
       "questID:3": 57,
       "preRequisites:11": [
-        65
+        66
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5459,7 +5491,7 @@
     "91:10": {
       "questID:3": 93,
       "preRequisites:11": [
-        50
+        47
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -5483,7 +5515,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Bronze Chest",
-          "desc:8": "Store even more with a bronze chest!\n\n§6Note that if you cannot make this right now you will be able to if you progress towards the steam part of this questline."
+          "desc:8": "Store even more with a bronze chest!"
         }
       },
       "tasks:9": {
@@ -5647,7 +5679,7 @@
           "repeat_relative:1": 1,
           "ismain:1": 0,
           "name:8": "Steel",
-          "desc:8": "\"foot\" - e5_snipz, while im in a VC with him\n\nAnyway steel is a very important material for machine hulls and many components of machines going fowards. And, well, you\u0027re gonna need a lot... like... a lot of steel. Start with 32 for now, but you will need a lot more in the future."
+          "desc:8": "\"hi\" - e5_snipz, while im in a VC with him\n\nAnyway steel is a very important material for machine hulls and many components of machines going fowards. And, well, you\u0027re gonna need a lot... like... a lot of steel. Start with 32 for now, but you will need a lot more in the future."
         }
       },
       "tasks:9": {
@@ -6111,7 +6143,7 @@
     "101:10": {
       "questID:3": 103,
       "preRequisites:11": [
-        65
+        66
       ],
       "properties:10": {
         "betterquesting:10": {
@@ -11679,12 +11711,26 @@
         },
         "26:10": {
           "sizeX:3": 24,
+          "x:3": -192,
+          "y:3": -84,
+          "id:3": 48,
+          "sizeY:3": 24
+        },
+        "27:10": {
+          "sizeX:3": 24,
+          "x:3": -144,
+          "y:3": -84,
+          "id:3": 50,
+          "sizeY:3": 24
+        },
+        "28:10": {
+          "sizeX:3": 24,
           "x:3": -24,
           "y:3": -168,
           "id:3": 59,
           "sizeY:3": 24
         },
-        "27:10": {
+        "29:10": {
           "sizeX:3": 24,
           "x:3": -96,
           "y:3": -168,
@@ -11834,7 +11880,7 @@
         "17:10": {
           "sizeX:3": 24,
           "x:3": 84,
-          "y:3": 204,
+          "y:3": 192,
           "id:3": 43,
           "sizeY:3": 24
         },
@@ -11854,649 +11900,635 @@
         },
         "20:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": 216,
+          "x:3": 276,
+          "y:3": 168,
           "id:3": 46,
           "sizeY:3": 24
         },
         "21:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 120,
+          "x:3": 36,
+          "y:3": 72,
           "id:3": 47,
           "sizeY:3": 24
         },
         "22:10": {
           "sizeX:3": 24,
-          "x:3": 132,
-          "y:3": 228,
-          "id:3": 48,
+          "x:3": 36,
+          "y:3": 168,
+          "id:3": 49,
           "sizeY:3": 24
         },
         "23:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": 228,
-          "id:3": 49,
+          "x:3": 36,
+          "y:3": 216,
+          "id:3": 51,
           "sizeY:3": 24
         },
         "24:10": {
-          "sizeX:3": 36,
-          "x:3": 0,
-          "y:3": 168,
-          "id:3": 50,
-          "sizeY:3": 36
-        },
-        "25:10": {
-          "sizeX:3": 12,
-          "x:3": -24,
-          "y:3": 168,
-          "id:3": 51,
-          "sizeY:3": 12
-        },
-        "26:10": {
           "sizeX:3": 24,
           "x:3": 228,
           "y:3": 24,
           "id:3": 52,
           "sizeY:3": 24
         },
-        "27:10": {
+        "25:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": 12,
           "id:3": 53,
           "sizeY:3": 24
         },
-        "28:10": {
+        "26:10": {
           "sizeX:3": 72,
           "x:3": 336,
           "y:3": -12,
           "id:3": 54,
           "sizeY:3": 72
         },
-        "29:10": {
-          "sizeX:3": 24,
-          "x:3": 444,
-          "y:3": 12,
+        "27:10": {
+          "sizeX:3": 36,
+          "x:3": 360,
+          "y:3": -60,
           "id:3": 55,
-          "sizeY:3": 24
+          "sizeY:3": 36
         },
-        "30:10": {
+        "28:10": {
           "sizeX:3": 24,
           "x:3": -132,
           "y:3": -120,
           "id:3": 56,
           "sizeY:3": 24
         },
-        "31:10": {
+        "29:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": -120,
+          "x:3": 120,
+          "y:3": -216,
           "id:3": 57,
           "sizeY:3": 24
         },
-        "32:10": {
+        "30:10": {
           "sizeX:3": 24,
           "x:3": 360,
           "y:3": 96,
           "id:3": 58,
           "sizeY:3": 24
         },
-        "33:10": {
+        "31:10": {
           "sizeX:3": 24,
           "x:3": 180,
           "y:3": 96,
           "id:3": 61,
           "sizeY:3": 24
         },
-        "34:10": {
+        "32:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": 96,
           "id:3": 62,
           "sizeY:3": 24
         },
-        "35:10": {
+        "33:10": {
           "sizeX:3": 24,
           "x:3": 276,
           "y:3": 132,
           "id:3": 63,
           "sizeY:3": 24
         },
-        "36:10": {
+        "34:10": {
           "sizeX:3": 24,
           "x:3": 360,
           "y:3": 132,
           "id:3": 64,
           "sizeY:3": 24
         },
-        "37:10": {
+        "35:10": {
           "sizeX:3": 60,
           "x:3": 432,
           "y:3": -72,
           "id:3": 65,
           "sizeY:3": 60
         },
-        "38:10": {
+        "36:10": {
           "sizeX:3": 48,
           "x:3": 132,
           "y:3": -180,
           "id:3": 66,
           "sizeY:3": 48
         },
-        "39:10": {
-          "sizeX:3": 24,
-          "x:3": 480,
+        "37:10": {
+          "sizeX:3": 36,
+          "x:3": 444,
           "y:3": 12,
           "id:3": 67,
+          "sizeY:3": 36
+        },
+        "38:10": {
+          "sizeX:3": 24,
+          "x:3": 96,
+          "y:3": -120,
+          "id:3": 68,
+          "sizeY:3": 24
+        },
+        "39:10": {
+          "sizeX:3": 24,
+          "x:3": 144,
+          "y:3": -264,
+          "id:3": 69,
           "sizeY:3": 24
         },
         "40:10": {
           "sizeX:3": 24,
-          "x:3": 180,
-          "y:3": -216,
-          "id:3": 68,
-          "sizeY:3": 24
-        },
-        "41:10": {
-          "sizeX:3": 24,
-          "x:3": 96,
-          "y:3": -216,
-          "id:3": 69,
-          "sizeY:3": 24
-        },
-        "42:10": {
-          "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": -216,
+          "x:3": 60,
+          "y:3": -264,
           "id:3": 70,
           "sizeY:3": 24
         },
-        "43:10": {
+        "41:10": {
           "sizeX:3": 48,
           "x:3": 276,
           "y:3": -228,
           "id:3": 71,
           "sizeY:3": 48
         },
-        "44:10": {
-          "sizeX:3": 24,
+        "42:10": {
+          "sizeX:3": 36,
           "x:3": 348,
           "y:3": -132,
           "id:3": 72,
-          "sizeY:3": 24
+          "sizeY:3": 36
         },
-        "45:10": {
+        "43:10": {
           "sizeX:3": 24,
-          "x:3": 48,
-          "y:3": -252,
+          "x:3": 60,
+          "y:3": -348,
           "id:3": 73,
           "sizeY:3": 24
         },
-        "46:10": {
+        "44:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": -216,
+          "x:3": 288,
+          "y:3": -276,
           "id:3": 74,
           "sizeY:3": 24
         },
-        "47:10": {
+        "45:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": -240,
           "id:3": 75,
           "sizeY:3": 24
         },
-        "48:10": {
+        "46:10": {
           "sizeX:3": 24,
           "x:3": 396,
           "y:3": -240,
           "id:3": 76,
           "sizeY:3": 24
         },
-        "49:10": {
+        "47:10": {
           "sizeX:3": 48,
           "x:3": 384,
           "y:3": -324,
           "id:3": 77,
           "sizeY:3": 48
         },
-        "50:10": {
+        "48:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": -276,
           "id:3": 78,
           "sizeY:3": 24
         },
-        "51:10": {
+        "49:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": -264,
+          "x:3": 252,
+          "y:3": -312,
           "id:3": 79,
           "sizeY:3": 24
         },
-        "52:10": {
+        "50:10": {
           "sizeX:3": 84,
           "x:3": 132,
           "y:3": -396,
           "id:3": 80,
           "sizeY:3": 84
         },
-        "53:10": {
-          "sizeX:3": 36,
+        "51:10": {
+          "sizeX:3": 48,
           "x:3": 420,
           "y:3": -192,
           "id:3": 81,
-          "sizeY:3": 36
+          "sizeY:3": 48
         },
-        "54:10": {
+        "52:10": {
           "sizeX:3": 24,
-          "x:3": 72,
-          "y:3": -312,
+          "x:3": 60,
+          "y:3": -396,
           "id:3": 82,
           "sizeY:3": 24
         },
-        "55:10": {
-          "sizeX:3": 24,
-          "x:3": 288,
+        "53:10": {
+          "sizeX:3": 36,
+          "x:3": 324,
           "y:3": -372,
           "id:3": 83,
-          "sizeY:3": 24
+          "sizeY:3": 36
         },
-        "56:10": {
+        "54:10": {
           "sizeX:3": 24,
           "x:3": -84,
           "y:3": -144,
           "id:3": 84,
           "sizeY:3": 24
         },
-        "57:10": {
+        "55:10": {
           "sizeX:3": 24,
           "x:3": 444,
           "y:3": -348,
           "id:3": 85,
           "sizeY:3": 24
         },
-        "58:10": {
+        "56:10": {
           "sizeX:3": 24,
-          "x:3": 228,
-          "y:3": -180,
+          "x:3": 336,
+          "y:3": -276,
           "id:3": 86,
           "sizeY:3": 24
         },
-        "59:10": {
+        "57:10": {
           "sizeX:3": 24,
           "x:3": 144,
           "y:3": -120,
           "id:3": 87,
           "sizeY:3": 24
         },
-        "60:10": {
+        "58:10": {
           "sizeX:3": 24,
           "x:3": 252,
           "y:3": -120,
           "id:3": 89,
           "sizeY:3": 24
         },
-        "61:10": {
+        "59:10": {
           "sizeX:3": 24,
           "x:3": 336,
           "y:3": -204,
           "id:3": 90,
           "sizeY:3": 24
         },
-        "62:10": {
+        "60:10": {
           "sizeX:3": 24,
           "x:3": 384,
           "y:3": -204,
           "id:3": 91,
           "sizeY:3": 24
         },
-        "63:10": {
-          "sizeX:3": 36,
-          "x:3": -84,
-          "y:3": 168,
+        "61:10": {
+          "sizeX:3": 24,
+          "x:3": 36,
+          "y:3": 120,
           "id:3": 93,
-          "sizeY:3": 36
+          "sizeY:3": 24
         },
-        "64:10": {
+        "62:10": {
           "sizeX:3": 24,
           "x:3": -12,
           "y:3": 48,
           "id:3": 94,
           "sizeY:3": 24
         },
-        "65:10": {
+        "63:10": {
           "sizeX:3": 84,
           "x:3": 564,
-          "y:3": -408,
+          "y:3": -396,
           "id:3": 95,
           "sizeY:3": 84
         },
-        "66:10": {
+        "64:10": {
           "sizeX:3": 60,
           "x:3": 576,
           "y:3": 0,
           "id:3": 96,
           "sizeY:3": 60
         },
-        "67:10": {
+        "65:10": {
           "sizeX:3": 24,
           "x:3": 648,
           "y:3": -36,
           "id:3": 97,
           "sizeY:3": 24
         },
-        "68:10": {
+        "66:10": {
           "sizeX:3": 36,
           "x:3": 696,
           "y:3": 132,
           "id:3": 98,
           "sizeY:3": 36
         },
-        "69:10": {
+        "67:10": {
           "sizeX:3": 24,
-          "x:3": 0,
-          "y:3": -252,
+          "x:3": -48,
+          "y:3": -348,
           "id:3": 99,
           "sizeY:3": 24
         },
-        "70:10": {
+        "68:10": {
           "sizeX:3": 48,
-          "x:3": -72,
-          "y:3": -300,
+          "x:3": 0,
+          "y:3": -312,
           "id:3": 100,
           "sizeY:3": 48
         },
-        "71:10": {
+        "69:10": {
           "sizeX:3": 24,
           "x:3": 12,
-          "y:3": -192,
+          "y:3": -168,
           "id:3": 101,
           "sizeY:3": 24
         },
-        "72:10": {
+        "70:10": {
           "sizeX:3": 24,
-          "x:3": -24,
+          "x:3": 12,
           "y:3": -216,
           "id:3": 102,
           "sizeY:3": 24
         },
-        "73:10": {
+        "71:10": {
           "sizeX:3": 24,
-          "x:3": -12,
-          "y:3": -72,
+          "x:3": 168,
+          "y:3": -216,
           "id:3": 103,
           "sizeY:3": 24
         },
-        "74:10": {
+        "72:10": {
           "sizeX:3": 48,
-          "x:3": -132,
-          "y:3": -240,
+          "x:3": -60,
+          "y:3": -228,
           "id:3": 104,
           "sizeY:3": 48
         },
-        "75:10": {
+        "73:10": {
           "sizeX:3": 24,
           "x:3": 612,
           "y:3": 108,
           "id:3": 105,
           "sizeY:3": 24
         },
-        "76:10": {
+        "74:10": {
           "sizeX:3": 24,
           "x:3": 648,
           "y:3": 108,
           "id:3": 106,
           "sizeY:3": 24
         },
-        "77:10": {
+        "75:10": {
           "sizeX:3": 24,
           "x:3": 684,
           "y:3": 216,
           "id:3": 107,
           "sizeY:3": 24
         },
-        "78:10": {
+        "76:10": {
           "sizeX:3": 24,
           "x:3": 720,
           "y:3": 180,
           "id:3": 108,
           "sizeY:3": 24
         },
-        "79:10": {
+        "77:10": {
           "sizeX:3": 24,
           "x:3": 684,
           "y:3": 180,
           "id:3": 109,
           "sizeY:3": 24
         },
-        "80:10": {
+        "78:10": {
           "sizeX:3": 24,
           "x:3": 720,
           "y:3": 216,
           "id:3": 110,
           "sizeY:3": 24
         },
-        "81:10": {
+        "79:10": {
           "sizeX:3": 24,
           "x:3": 252,
-          "y:3": -156,
+          "y:3": -168,
           "id:3": 111,
           "sizeY:3": 24
         },
-        "82:10": {
+        "80:10": {
           "sizeX:3": 24,
           "x:3": 192,
-          "y:3": -156,
+          "y:3": -168,
           "id:3": 112,
           "sizeY:3": 24
         },
-        "83:10": {
+        "81:10": {
           "sizeX:3": 24,
           "x:3": 648,
           "y:3": 192,
           "id:3": 113,
           "sizeY:3": 24
         },
-        "84:10": {
+        "82:10": {
           "sizeX:3": 24,
           "x:3": 612,
           "y:3": 156,
           "id:3": 114,
           "sizeY:3": 24
         },
-        "85:10": {
+        "83:10": {
           "sizeX:3": 24,
           "x:3": 648,
           "y:3": 156,
           "id:3": 115,
           "sizeY:3": 24
         },
-        "86:10": {
+        "84:10": {
           "sizeX:3": 36,
           "x:3": 696,
           "y:3": 12,
           "id:3": 116,
           "sizeY:3": 36
         },
-        "87:10": {
+        "85:10": {
           "sizeX:3": 24,
-          "x:3": 468,
-          "y:3": -144,
+          "x:3": 492,
+          "y:3": -180,
           "id:3": 117,
           "sizeY:3": 24
         },
-        "88:10": {
+        "86:10": {
           "sizeX:3": 24,
-          "x:3": 468,
-          "y:3": -192,
+          "x:3": 492,
+          "y:3": -216,
           "id:3": 118,
           "sizeY:3": 24
         },
-        "89:10": {
+        "87:10": {
           "sizeX:3": 36,
           "x:3": 624,
           "y:3": -300,
           "id:3": 119,
           "sizeY:3": 36
         },
-        "90:10": {
+        "88:10": {
           "sizeX:3": 48,
           "x:3": 648,
           "y:3": -120,
           "id:3": 120,
           "sizeY:3": 48
         },
-        "91:10": {
+        "89:10": {
           "sizeX:3": 24,
           "x:3": 84,
-          "y:3": 252,
+          "y:3": 240,
           "id:3": 121,
           "sizeY:3": 24
         },
-        "92:10": {
+        "90:10": {
           "sizeX:3": 24,
           "x:3": 660,
           "y:3": -168,
           "id:3": 122,
           "sizeY:3": 24
         },
-        "93:10": {
+        "91:10": {
           "sizeX:3": 36,
           "x:3": 624,
           "y:3": -240,
           "id:3": 123,
           "sizeY:3": 36
         },
-        "94:10": {
+        "92:10": {
           "sizeX:3": 24,
           "x:3": 672,
           "y:3": -204,
           "id:3": 125,
           "sizeY:3": 24
         },
-        "95:10": {
+        "93:10": {
           "sizeX:3": 24,
           "x:3": 708,
           "y:3": -84,
           "id:3": 126,
           "sizeY:3": 24
         },
-        "96:10": {
+        "94:10": {
           "sizeX:3": 24,
           "x:3": 708,
           "y:3": -120,
           "id:3": 127,
           "sizeY:3": 24
         },
-        "97:10": {
+        "95:10": {
           "sizeX:3": 48,
           "x:3": 744,
           "y:3": -120,
           "id:3": 128,
           "sizeY:3": 48
         },
-        "98:10": {
+        "96:10": {
           "sizeX:3": 24,
           "x:3": 684,
           "y:3": -48,
           "id:3": 129,
           "sizeY:3": 24
         },
-        "99:10": {
+        "97:10": {
           "sizeX:3": 24,
           "x:3": 732,
           "y:3": -60,
           "id:3": 130,
           "sizeY:3": 24
         },
-        "100:10": {
+        "98:10": {
           "sizeX:3": 36,
           "x:3": 804,
           "y:3": -240,
           "id:3": 131,
           "sizeY:3": 36
         },
-        "101:10": {
+        "99:10": {
           "sizeX:3": 48,
           "x:3": 744,
           "y:3": -180,
           "id:3": 132,
           "sizeY:3": 48
         },
-        "102:10": {
+        "100:10": {
           "sizeX:3": 120,
           "x:3": 876,
           "y:3": -120,
           "id:3": 133,
           "sizeY:3": 120
         },
-        "103:10": {
+        "101:10": {
           "sizeX:3": 36,
           "x:3": 636,
           "y:3": 60,
           "id:3": 134,
           "sizeY:3": 36
         },
-        "104:10": {
+        "102:10": {
           "sizeX:3": 24,
           "x:3": 684,
           "y:3": 60,
           "id:3": 135,
           "sizeY:3": 24
         },
-        "105:10": {
+        "103:10": {
           "sizeX:3": 24,
           "x:3": 792,
           "y:3": 60,
           "id:3": 136,
           "sizeY:3": 24
         },
-        "106:10": {
+        "104:10": {
           "sizeX:3": 24,
           "x:3": 756,
           "y:3": 96,
           "id:3": 137,
           "sizeY:3": 24
         },
-        "107:10": {
+        "105:10": {
           "sizeX:3": 24,
           "x:3": 792,
           "y:3": 108,
           "id:3": 140,
           "sizeY:3": 24
         },
-        "108:10": {
+        "106:10": {
           "sizeX:3": 24,
           "x:3": 792,
           "y:3": 84,
           "id:3": 141,
           "sizeY:3": 24
         },
-        "109:10": {
+        "107:10": {
           "sizeX:3": 96,
           "x:3": 876,
           "y:3": 60,
           "id:3": 142,
           "sizeY:3": 96
         },
-        "110:10": {
+        "108:10": {
           "sizeX:3": 24,
-          "x:3": 504,
-          "y:3": -108,
+          "x:3": 492,
+          "y:3": -144,
           "id:3": 143,
           "sizeY:3": 24
         },
-        "111:10": {
+        "109:10": {
           "sizeX:3": 24,
           "x:3": 792,
           "y:3": 132,
           "id:3": 144,
           "sizeY:3": 24
         },
-        "112:10": {
+        "110:10": {
           "sizeX:3": 48,
           "x:3": 852,
           "y:3": -216,
