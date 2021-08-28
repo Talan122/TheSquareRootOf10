@@ -23,8 +23,8 @@ Please only download the pack from this Github page or the Curse page.
 
 __Note__: In the dev-builds on Github Actions, the mods:
 
-    - [Applied Energistics 2 Trousers Edition](https://github.com/PrototypeTrousers/Applied-Energistics-2)
+[Applied Energistics 2 Trousers Edition](https://github.com/PrototypeTrousers/Applied-Energistics-2)
 
-    - [Nutrition](https://github.com/WesCook/Nutrition)
+[Nutrition](https://github.com/WesCook/Nutrition)
     
 are missing. You can download them from their respective GitHub pages.
