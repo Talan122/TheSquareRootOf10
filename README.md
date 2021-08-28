@@ -19,4 +19,12 @@ Questline is currently at the LV Steam Turbine.
 
 Issues/Pull Requests are appretiated. For issues, please try and give good detail into the issue, (or, alternatively for suggestions, give us details on how and why your suggestion should be added,) thanks!
 
-All versions past 0.0.3-alpha will now be on Curse. Please, do not install the pack from anywhere else other than curse (and here for some ancient versions)
+Please only download the pack from this Github page or the Curse page.
+
+__Note__: In the dev-builds on Github Actions, the mods:
+
+    - [Applied Energistics 2 Trousers Edition](https://github.com/PrototypeTrousers/Applied-Energistics-2)
+
+    - [Nutrition](https://github.com/WesCook/Nutrition)
+    
+are missing. You can download them from their respective GitHub pages.
