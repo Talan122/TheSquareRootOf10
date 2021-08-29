@@ -23,6 +23,26 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
+      - name: Download PAE2
+        # You may pin to the exact commit or the version.
+        uses: robinraju/release-downloader@v1.1
+        with:
+          repository: PrototypeTrousers/Applied-Energistics-2
+          latest: false
+          tag: omni-fixes-v46
+          fileName: appliedenergistics2-rv6-stable-7.omni-fixes-v46m.jar
+          out-file-path: ./overrides/mods
+        
+      - name: Download Nutrition
+        # You may pin to the exact commit or the version.
+        uses: robinraju/release-downloader@v1.1
+        with:
+          repository: WesCook/Nutrition
+          latest: false
+          tag: v4.9.0
+          fileName: Nutrition-1.12.2-4.9.0.jar
+          out-file-path: ./overrides/mods
+      
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
