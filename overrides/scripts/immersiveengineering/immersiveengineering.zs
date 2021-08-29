@@ -291,3 +291,124 @@ mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_legs>);
 mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_feet>);
 mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_chest>);
 mods.jei.JEI.removeAndHide(<immersiveengineering:faraday_suit_head>);
+
+recipes.addShaped(<contenttweaker:drillmold>, [
+    [null, null, null],
+    [null, <gregtech:meta_tool:6>, <gregtech:meta_item_1:32300>],
+    [null, null, null]
+]);
+
+recipes.removeByRecipeName("immersiveengineering:stone_decoration/concrete2");
+recipes.addShaped(<immersiveengineering:stone_decoration:5>*12, [
+    [<gregtech:meta_item_1:1089>, <ore:itemClay>, <gregtech:meta_item_1:1089>],
+    [<ore:gravel>, <minecraft:water_bucket>, <ore:gravel>],
+    [<gregtech:meta_item_1:1089>, <ore:itemClay>, <gregtech:meta_item_1:1089>]
+]);
+
+recipes.remove(<immersiveengineering:revolver>);
+recipes.addShaped(<immersiveengineering:revolver>, [
+    [null, <ore:plateSteel>],
+    [<immersiveengineering:material:14>, <immersiveengineering:material:15>, <immersiveengineering:material:16>],
+    [<immersiveengineering:material:13>, <ore:plateSteel>, <immersiveengineering:material:13>]
+]);
+
+recipes.remove(<immersiveengineering:chemthrower>);
+recipes.addShaped(<immersiveengineering:chemthrower>, [
+    [null, <immersiveengineering:toolupgrade:0>, <immersiveengineering:material:13>],
+    [null, <gregtech:metal_casing:4>, <immersiveengineering:material:13>],
+    [<ore:pipeMediumSteel>, <gregtech:meta_item_1:32762>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:0>);
+recipes.addShaped(<immersiveengineering:toolupgrade:0>, [
+    [<advancedrocketry:pressuretank:1>.withTag({Fluid: {FluidName: "oxygen", Amount: 2000}}), <ore:dyeBlue>],
+    [<ore:dyeBlue>, <advancedrocketry:pressuretank:1>.withTag({Fluid: {FluidName: "oxygen", Amount: 2000}}), <ore:dyeBlue>],
+    [null, <ore:dyeBlue>, <immersiveengineering:material:8>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:1>);
+
+recipes.remove(<immersiveengineering:toolupgrade:2>);
+recipes.addShaped(<immersiveengineering:toolupgrade:2>, [
+    [<gregtech:meta_tool:6>, <ore:stickSteel>, <gregtech:meta_tool:9>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
+    [null, <immersiveengineering:material:9>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:3>);
+recipes.addShaped(<immersiveengineering:toolupgrade:3>, [
+    [<immersiveengineering:material:8>, <ore:plateSteel>],
+    [<ore:plateSteel>, <gregtech:meta_item_1:32762>, <ore:dyeRed>],
+    [null, <ore:dyeRed>, <gregtech:meta_item_1:32762>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:4>);
+recipes.addShaped(<immersiveengineering:toolupgrade:4>, [
+    [<gregtech:meta_tool:9>, <ore:plateSteel>],
+    [<ore:plateSteel>, <ore:plankTreatedWood>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:5>);
+recipes.addShaped(<immersiveengineering:toolupgrade:5>, [
+    [null, <ore:plateBronze>, <ore:plateSteel>],
+    [<ore:plateBronze>, null, <ore:plateBronze>],
+    [<immersiveengineering:material:8>, <ore:plateBronze>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:6>);
+recipes.addShaped(<immersiveengineering:toolupgrade:6>, [
+    [vacTube, vacTube, vacTube],
+    [<ore:stickSteel>, <ore:wireGtSingleCopper>, <ore:stickSteel>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:7>);
+recipes.addShaped(<immersiveengineering:toolupgrade:7>, [
+    [null, <ore:plateCurvedSteel>, <ore:plateSteel>],
+    [<ore:pipeMediumSteel>, <ore:pipeMediumSteel>, <minecraft:hopper>],
+    [null, <ore:plateCurvedSteel>, <ore:plateSteel>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:8>);
+recipes.addShaped(<immersiveengineering:toolupgrade:8>, [
+    [<ore:paneGlass>, <ore:plateCopper>],
+    [<ore:plateCopper>, null, <ore:plateCopper>],
+    [null, <ore:plateCopper>, <ore:paneGlass>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:9>);
+recipes.addShaped(<immersiveengineering:toolupgrade:9>, [
+    [<ore:wireGtDoubleSilver>, <ore:wireGtDoubleSilver>, <ore:wireGtDoubleSilver>],
+    [<gregtech:meta_item_1:32538>, <gregtech:meta_item_1:32538>, <gregtech:meta_item_1:32538>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:10>);
+recipes.addShaped(<immersiveengineering:toolupgrade:10>, [
+    [<ore:plateAluminium>, <ore:paneGlass>, <ore:plateAluminium>],
+    [<ore:paneGlass>, vacTube, <ore:paneGlass>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:11>);
+recipes.addShaped(<immersiveengineering:toolupgrade:11>, [
+    [<ore:wireGtQuadrupleTin>, <ore:stickIron>, <ore:wireGtQuadrupleTin>],
+    [<ore:wireGtQuadrupleTin>, <ore:stickIron>, <ore:wireGtQuadrupleTin>],
+    [<ore:wireGtQuadrupleTin>, <ore:stickIron>, <ore:wireGtQuadrupleTin>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:12>);
+recipes.addShaped(<immersiveengineering:toolupgrade:12>, [
+    [null, null, <ore:leather>],
+    [<ore:leather>, <ore:coilCopper>],
+    [<ore:leather>, <ore:platesteelMagnetic>, <ore:leather>]
+]);
+
+recipes.remove(<immersiveengineering:toolupgrade:13>);
+recipes.addShaped(<immersiveengineering:toolupgrade:13>, [
+    [null, <ore:pipeMediumSteel>],
+    [<immersiveengineering:toolupgrade:3>, <immersiveengineering:material:9>, <immersiveengineering:toolupgrade:3>]
+]);
+
+mods.jei.JEI.removeAndHide(<immersiveengineering:graphite_electrode>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:fluorescent_tube>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:powerpack>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:maintenance_kit>);
+mods.jei.JEI.removeAndHide(<immersiveengineering:coresample>);

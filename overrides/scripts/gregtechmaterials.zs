@@ -52,4 +52,4 @@ darkSteel.addFlags(["GENERATE_PLATE", "GENERATE_ROD", "GENERATE_LONG_ROD", "GENE
 <material:nickel>.addFlags(["GENERATE_ROD", "GENERATE_BOLT_SCREW"]);
 <material:obsidian>.addFlags(["GENERATE_PLATE"]);
 <material:copper>.addFlags(["GENERATE_DOUBLE_PLATE"]);
-<material:gold>.addFlags(["GENERATE_DOUBLE_PLATE"]);
+<material:gold>.addFlags(["GENERATE_DOUBLE_PLATE", "GENERATE_DENSE"]);

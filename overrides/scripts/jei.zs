@@ -108,7 +108,7 @@ for metas in 0 to 41 {
 }
 
 var toRemoveIEMaterials = [
-    1,2,3,5,6,10,11,12,17,18,19,20,21,22,23,24,25,26,27
+    1,2,3,5,6,7,10,11,12,17,18,19,20,21,22,23,24,25,26,27
     ] as int[];
 var IEMaterials = <immersiveengineering:material>.definition;
 
@@ -192,6 +192,7 @@ for metas in 2 to 8 {
     mods.jei.JEI.removeAndHide(IEMetalDecor0.makeStack(metas));
 }
 
+mods.jei.JEI.removeAndHide(<immersiveengineering:jerrycan>);
 //Energy Converter Tooltips because most of them are hidden
 for metas in 2900 to 2971 {
     var converter = GTMachine.makeStack(metas);

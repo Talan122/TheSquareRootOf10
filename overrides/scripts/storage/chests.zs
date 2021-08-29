@@ -77,9 +77,9 @@ recipes.addShaped(<gregtech:machine:803>, [
 //Silver Chest
 recipes.remove(<ironchest:iron_chest:4>);
 recipes.addShaped(<ironchest:iron_chest:4>, [
-    [<ore:screwSilver>, <ore:plateDoubleSilver>*2, <ore:screwSilver>],
+    [<ore:screwSilver>, <ore:plateDoubleSilver>, <ore:screwSilver>],
     [<gregtech:meta_tool:6>, <gregtech:machine:803>, <gregtech:meta_tool:11>],
-    [null, <ore:plateDoubleSilver>*2]
+    [null, <ore:plateDoubleSilver>]
 ]);
 
 //Everything hereafter will be locked behind MV Bending (as well as their respective tiers), and will only be possible through an assembler.
@@ -92,8 +92,8 @@ recipes.remove(<gregtech:machine:805>);
 recipes.remove(<gregtech:machine:806>);
 
 //Gold Chest
-assembler.recipeBuilder() //There's no dense gold, so I used rose gold. Shouldn't be that bad... right?
-    .inputs(<ironchest:iron_chest:4>, <ore:plateDenseRoseGold>*2)
+assembler.recipeBuilder()
+    .inputs(<ironchest:iron_chest:4>, <ore:plateDenseGold>*2)
     .outputs(<ironchest:iron_chest:1>)
     .property("circuit", 9)
     .EUt(24)

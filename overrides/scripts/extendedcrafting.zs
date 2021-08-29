@@ -25,7 +25,8 @@ val hiddenItems = [
     <extendedcrafting:material:1>,
     <extendedcrafting:material:3>,
     <extendedcrafting:guide>,
-    <extendedcrafting:interface>
+    <extendedcrafting:interface>,
+    <extendedcrafting:handheld_table>,
 ] as IItemStack[];
 
 for items in hiddenItems {

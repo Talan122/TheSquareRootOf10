@@ -6,6 +6,8 @@ import mods.gregtech.recipe.RecipeMap;
 import mods.gregtech.recipe.RecipeMaps;
 import mods.gregtech.material.MaterialRegistry;
 import mods.gregtech.recipe.PBFRecipeBuilder;
+import crafttweaker.block.IBlock;
+import crafttweaker.block.IBlockDefinition;
 
 import scripts.globalvariables.sawEzRecipe;
 
@@ -131,8 +133,8 @@ macerator.recipeBuilder()
 //Crafting table on a stick
 recipes.remove(<actuallyadditions:item_crafter_on_a_stick>);
 recipes.addShaped(<actuallyadditions:item_crafter_on_a_stick>, [
-    [<forge:bucketfilled>.withTag({FluidName: "glue", Amount: 1000}).onlyWithTag({FluidName: "glue", Amount: 1000}), <minecraft:crafting_table>, <forge:bucketfilled>.withTag({FluidName: "glue", Amount: 1000}).onlyWithTag({FluidName: "glue", Amount: 1000})],
-    [<gregtech:meta_item_1:17001>, <minecraft:sign>, <gregtech:meta_item_1:17001>],
+    [null, <minecraft:crafting_table>],
+    [<gregtech:meta_item_1:17033>, <minecraft:sign>, <gregtech:meta_item_1:17033>],
     [<gregtech:meta_tool:9>, <minecraft:stick>, <gregtech:meta_tool:11>]
 ]);
 
@@ -237,6 +239,7 @@ recipes.addShaped(<minecraft:stick>*4, [
     [<ore:stickLongWood>],
 ]);
 
+//Makes the recipes for the drill heads in a forming press
 var metaItem1 = <gregtech:meta_item_1>.definition;
 var metaItem2 = <gregtech:meta_item_2>.definition;
 val allOreEntries = oreDict.entries;
@@ -256,3 +259,18 @@ for metas in 8000 to 8999 {
         }
     }
 }
+
+//Adds all the molds/extruder shapes to a chisel variant
+mods.chisel.Carving.addGroup("extrudermoldshapes");
+
+for metas in 32000 to 32767 {
+    if(metaItem1.makeStack(metas).displayName has "Mold") {
+        mods.chisel.Carving.addVariation("extrudermoldshapes", metaItem1.makeStack(metas));
+    } else if(metaItem1.makeStack(metas).displayName has "Extruder Shape") {
+        mods.chisel.Carving.addVariation("extrudermoldshapes", metaItem1.makeStack(metas));
+        
+    }
+}
+
+mods.chisel.Carving.addVariation("extrudermoldshapes", <contenttweaker:drillmold>);
+mods.chisel.Carving.addVariation("extrudermoldshapes", <gregtech:meta_item_1:32300>);

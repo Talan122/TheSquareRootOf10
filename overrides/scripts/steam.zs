@@ -282,3 +282,5 @@ assembler.recipeBuilder()
         .EUt(64)
         .duration(1000)
         .buildAndRegister();
+    
+recipes.removeByRecipeName("extrautils2:shortcut_hopper");
