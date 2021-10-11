@@ -5,7 +5,7 @@ The Square Root of 10 is a modpack based around the Gregtech Community Edition a
 
 The pack right now is still in a very much early-alpha state. Updates are being posted to github in the form of commits, with occasional version updates on Curse.
 
-It is also a very light pack, requiring as little as 2GB of ram to run (Subject to change)
+The pack requires at least 4GB of ram to run decently.
 
 [__Curseforge Page__](https://www.curseforge.com/minecraft/modpacks/the-square-root-of-10)
 
